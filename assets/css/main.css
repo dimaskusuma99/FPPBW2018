@@ -53,7 +53,7 @@ body
 ==================================================*/
 .header
 {
-	background: url('../images/multipage-header.jpg');
+	background: url('../images/header1.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -151,7 +151,7 @@ body
 	position: relative;
 }
 .service .section-title{
-	margin-top: 110px;
+	margin-top: 10px;
 }
 .services{
 	margin-bottom: 100px;

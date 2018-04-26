@@ -1,5 +1,6 @@
+
 .section-background{
-	background: url('../images/services.png');
+	background: url('../images/head.png');
 }
 
 .price-table{
@@ -58,3 +59,5 @@
 	background: #4a148c;
 	transition: all .4s ease-in-out;
 }
+
+
