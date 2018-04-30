@@ -12,21 +12,21 @@
 			<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
 		<title>PRESENTATION | PT. WAHANA PAMUNAH LIMBAH INDUSTRI</title>
 
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/ionicons.min.css">
-		<link rel="stylesheet" href="assets/css/owl.carousel.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.css">
-	    <link rel="stylesheet" href="assets/css/main.css">
-	    <link rel="stylesheet" href="assets/css/section.css">
-	    <link rel="stylesheet" href="assets/css/service.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/bootstrap.min.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/ionicons.min.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/owl.carousel.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/owl.theme.css">
+	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/main.css">
+	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/section.css">
+	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/service.css">
 	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!--[if lt IE 9]>
-				<script src="assets/js/html5shiv.js"></script>
-				<script src="assets/js/respond.js"></script>
+				<script src="<?php echo base_url('assets') ?>/js/html5shiv.js"></script>
+				<script src="<?php echo base_url('assets') ?>/js/respond.js"></script>
 			<![endif]-->
 
 			<!--[if IE 8]>
-		    	<script src="assets/js/selectivizr.js"></script>
+		    	<script src="<?php echo base_url('assets') ?>/js/selectivizr.js"></script>
 		    <![endif]-->
 	</head>
 
@@ -45,19 +45,19 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="" href="#"><img src="assets/images/logo.png"></a>
+					<a class="" href="#"><img src="<?php echo base_url('assets') ?>/images/logo.png"></a>
 				</div> <!-- /.navbar-header -->
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index-multipage.html">home</a></li>
-						<li><a href="about.html">introduction</a></li>
-						<li><a href="service.html">services</a></li>
-						<li><a href="news.html">news</a></li>
-						<li class="active"><a href="presentation.html">presentation</a></li>
-						<li><a href="portfolio.html">gallery</a></li>
-						<li><a href="contact.html">contact</a></li>
+						<li><a href="<?php echo base_url('welcome') ?>">home</a></li>
+						<li><a href="<?php echo base_url('about') ?>">introduction</a></li>
+						<li><a href="<?php echo base_url('service') ?>">services</a></li>
+						<li><a href="<?php echo base_url('news') ?>">news</a></li>
+						<li class="active"><a href="<?php echo base_url('presentation') ?>">presentation</a></li>
+						<li><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
+						<li><a href="<?php echo base_url('contact') ?>">contact</a></li>
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
 		  	</div><!-- /.container -->
@@ -98,7 +98,7 @@
 				<div class="col-md-2">
 				</div> <!-- /.col-md-3 -->
 				<div class="col-md-6">
-					<img src="assets/images/flowchart.png" style="align:justify">
+					<img src="<?php echo base_url('assets') ?>/images/flowchart.png" style="align:justify">
 				</div>
 			</div>
 		</div> <!-- /.container -->
@@ -110,7 +110,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<img src="assets/images/footer.png">
+					<img src="<?php echo base_url('assets') ?>/images/footer.png">
 				</div>
 				<div class="col-sm-6">
 					<div class="copy">
@@ -128,12 +128,12 @@
 
 
 
-	<script src="assets/js/jquery-1.11.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/contact.js"></script>
-	<!-- // <script src="assets/js/smoothscroll.js"></script> -->
-	<script src="assets/js/script.js"></script>
+	<script src="<?php echo base_url('assets') ?>/js/jquery-1.11.2.min.js"></script>
+    <script src="<?php echo base_url('assets') ?>/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url('assets') ?>/js/owl.carousel.min.js"></script>
+    <script src="<?php echo base_url('assets') ?>/js/contact.js"></script>
+	<!-- // <script src="<?php echo base_url('assets') ?>/js/smoothscroll.js"></script> -->
+	<script src="<?php echo base_url('assets') ?>/js/script.js"></script>
 
 
 </body>
