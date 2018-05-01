@@ -29,7 +29,11 @@
 			<!--[if IE 8]>
 		    	<script src="<?php echo base_url('assets') ?>/js/selectivizr.js"></script>
 		    <![endif]-->
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> 9be4e365571c1aca01afd7d284469c4ee556b38d
 	</head>
 <body>
 <!-- Home -->
@@ -203,8 +207,11 @@
 	</footer>
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 9be4e365571c1aca01afd7d284469c4ee556b38d
 	<script src="<?php echo base_url('assets') ?>/js/jquery-1.11.2.min.js"></script>
     <script src="<?php echo base_url('assets') ?>/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url('assets') ?>/js/owl.carousel.min.js"></script>
