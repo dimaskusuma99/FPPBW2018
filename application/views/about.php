@@ -13,27 +13,28 @@
 			<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
 		<title>INTRODUCTION | PT. WAHANA PAMUNAH LIMBAH INDUSTRI</title>
 
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/ionicons.min.css">
-		<link rel="stylesheet" href="assets/css/owl.carousel.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.css">
-	    <link rel="stylesheet" href="assets/css/main.css">
-	    <link rel="stylesheet" href="assets/css/section.css">
-	    <link rel="stylesheet" href="assets/css/about.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/bootstrap.min.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/ionicons.min.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/owl.carousel.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/owl.theme.css">
+	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/main.css">
+	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/section.css">
+	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/about.css">
 	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!--[if lt IE 9]>
-				<script src="assets/js/html5shiv.js"></script>
-				<script src="assets/js/respond.js"></script>
+				<script src="<?php echo base_url('assets') ?>/js/html5shiv.js"></script>
+				<script src="<?php echo base_url('assets') ?>/js/respond.js"></script>
 			<![endif]-->
 
 			<!--[if IE 8]>
-		    	<script src="assets/js/selectivizr.js"></script>
+		    	<script src="<?php echo base_url('assets') ?>/js/selectivizr.js"></script>
 		    <![endif]-->
+
 	</head>
 <body>
 <!-- Home -->
 	<section class="portfolio-header" id="header">
-		
+
 		<nav class="navbar navbar-default">
 			<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -44,19 +45,19 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="" href="#"><img src="assets/images/logo.png"></a>
+					<a class="" href="#"><img src="<?php echo base_url('assets') ?>/images/logo.png"></a>
 				</div> <!-- /.navbar-header -->
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index-multipage.html">home</a></li>
-						<li class="active"><a href="about.html">introduction</a></li>
-						<li><a href="service.html">services</a></li>
-						<li><a href="news.html">news</a></li>
-						<li><a href="presentation.html">presentation</a></li>
-						<li><a href="portfolio.html">gallery</a></li>
-						<li><a href="contact.html">contact</a></li>
+						<li><a href="<?php echo base_url('welcome') ?>">home</a></li>
+						<li class="active"><a href="<?php echo base_url('about') ?>">introduction</a></li>
+						<li><a href="<?php echo base_url('service') ?>">services</a></li>
+						<li><a href="<?php echo base_url('news') ?>">news</a></li>
+						<li><a href="<?php echo base_url('presentation') ?>">presentation</a></li>
+						<li><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
+						<li><a href="<?php echo base_url('contact') ?>">contact</a></li>
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
 		  	</div><!-- /.container -->
@@ -81,13 +82,13 @@
 			<h2 class="section-title black">
 				Introduction
 			</h2> <!-- /.section-title -->
-			<div class="underline purple"></div>	
+			<div class="underline purple"></div>
 			<div class="row">
 				<div class="col-md-3 col-sm-3">
-					<img src="assets/images/about-1.png" alt="about" class="about-img">
+					<img src="<?php echo base_url('assets') ?>/images/about-1.png" alt="about" class="about-img">
 				</div> <!-- /.col-md-3 -->
 				<div class="col-md-3 col-sm-3">
-					<img src="assets/images/about-2.png" alt="about" class="about-img">
+					<img src="<?php echo base_url('assets') ?>/images/about-2.png" alt="about" class="about-img">
 				</div> <!-- /.col-md-3 -->
 				<div class="col-md-6 col-sm-12">
 					<p>
@@ -118,7 +119,7 @@
 						Wahana Pamunah Limbah Industri (PT WPLI) is a company engaged in the processing of hazardous and toxic waste materials. The company started with the founder’s concern for the environment and the local community, therefore the founder has a desire to build a company that focuses on environmental improvements from hazardous and toxic waste materials. </p>
 						<br>
 					<p>
-						The company owns 7 hectares of land purchased in 1995, located on the main road of Rangkas Bitung, Parakan Village, Jawilan, Serang, Banten Province. In early 2004, the founders of the company approached government and community officials to introduce the idea of ​​establishing a waste management plant in their area.</p> 
+						The company owns 7 hectares of land purchased in 1995, located on the main road of Rangkas Bitung, Parakan Village, Jawilan, Serang, Banten Province. In early 2004, the founders of the company approached government and community officials to introduce the idea of ​​establishing a waste management plant in their area.</p>
 						<br>
 					<p>
 						In March 2001 with the old ownership of Foreign Investment Company (PMA) owned by Korea, PT WPLI obtained the deed of establishment based on Notarial Deed. No. 11 and has been endorsed by the Ministry of Law and Human Rights with no. C-341.HT.0310-th2002.
@@ -186,13 +187,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<img src="assets/images/footer.png">
+					<img src="<?php echo base_url('assets') ?>/images/footer.png">
 				</div>
 				<div class="col-sm-6">
 					<div class="copy">
-						Office : (0254) 786 0456 / 786 0298 Fax : (0254) 786 0432 
+						Office : (0254) 786 0456 / 786 0298 Fax : (0254) 786 0432
 						<br>
-						Jl. Raya Rangkasbitung Km. 6, RW 1, Desa Parakan, Kecamatan Jawilan, Serang. 
+						Jl. Raya Rangkasbitung Km. 6, RW 1, Desa Parakan, Kecamatan Jawilan, Serang.
 						<br>
 						Copyright &copy; 2018 PT.WPLI. All Rights Reserved.
 					</div>
@@ -200,16 +201,16 @@
 			</div> <!-- /.row -->
 		</div> <!-- /.container -->
 	</footer>
-	
-	
 
 
-	<script src="assets/js/jquery-1.11.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/contact.js"></script>
-	<!-- // <script src="assets/js/smoothscroll.js"></script> -->
-	<script src="assets/js/script.js"></script>
+
+
+	<script src="<?php echo base_url('assets') ?>/js/jquery-1.11.2.min.js"></script>
+    <script src="<?php echo base_url('assets') ?>/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url('assets') ?>/js/owl.carousel.min.js"></script>
+    <script src="<?php echo base_url('assets') ?>/js/contact.js"></script>
+	<!-- // <script src="<?php echo base_url('assets') ?>/js/smoothscroll.js"></script> -->
+	<script src="<?php echo base_url('assets') ?>/js/script.js"></script>
 
 
 </body>

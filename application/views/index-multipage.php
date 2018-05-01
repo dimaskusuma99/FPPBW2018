@@ -49,13 +49,13 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="index-multipage">home</a></li>
-						<li><a href="#about">introduction</a></li>
-						<li><a href="#service">services</a></li>
-						<li><a href="#news">news</a></li>
-						<li><a href="#presentation">presentation</a></li>
-						<li><a href="#portfolio">gallery</a></li>
-						<li><a href="#contact">contact</a></li>
+						<li class="active"><a href="<?php echo base_url('welcome') ?>">home</a></li>
+						<li><a href="<?php echo base_url('about') ?>">introduction</a></li>
+						<li><a href="<?php echo base_url('service') ?>">services</a></li>
+						<li><a href="<?php echo base_url('news') ?>">news</a></li>
+						<li><a href="<?php echo base_url('presentation') ?>">presentation</a></li>
+						<li><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
+						<li><a href="<?php echo base_url('contact') ?>">contact</a></li>
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
 		  	</div><!-- /.container -->
@@ -69,6 +69,9 @@
 					<p class="header-subtitle">
 						"kami peduli"
 					</p>
+					<video width="80%" height="80%" controls>
+						<source src="assets/images/wpli.mp4" type="video/mp4">
+					</video>
 				</div> <!-- /.header-wrapper -->
 			</div>
 		</div> <!-- /.container -->

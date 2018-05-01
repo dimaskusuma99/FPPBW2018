@@ -12,21 +12,21 @@
 			<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
 		<title>SERVICE | PT. WAHANA PAMUNAH LIMBAH INDUSTRI</title>
 
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/ionicons.min.css">
-		<link rel="stylesheet" href="assets/css/owl.carousel.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.css">
-	    <link rel="stylesheet" href="assets/css/main.css">
-	    <link rel="stylesheet" href="assets/css/section.css">
-	    <link rel="stylesheet" href="assets/css/service.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/bootstrap.min.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/ionicons.min.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/owl.carousel.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/owl.theme.css">
+	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/main.css">
+	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/section.css">
+	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/service.css">
 	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!--[if lt IE 9]>
-				<script src="assets/js/html5shiv.js"></script>
-				<script src="assets/js/respond.js"></script>
+				<script src="<?php echo base_url('assets') ?>/js/html5shiv.js"></script>
+				<script src="<?php echo base_url('assets') ?>/js/respond.js"></script>
 			<![endif]-->
 
 			<!--[if IE 8]>
-		    	<script src="assets/js/selectivizr.js"></script>
+		    	<script src="<?php echo base_url('assets') ?>/js/selectivizr.js"></script>
 		    <![endif]-->
 	</head>
 
@@ -34,7 +34,7 @@
 
 <!-- Home -->
 	<section class="portfolio-header" id="header">
-		
+
 		<nav class="navbar navbar-default _navbar-fixed-top">
 			<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -45,19 +45,19 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="" href="#"><img src="assets/images/logo.png"></a>
+					<a class="" href="#"><img src="<?php echo base_url('assets') ?>/images/logo.png"></a>
 				</div> <!-- /.navbar-header -->
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index-multipage.html">home</a></li>
-						<li><a href="about.html">introduction</a></li>
-						<li class="active"><a href="service.html">services</a></li>
-						<li><a href="news.html">news</a></li>
-						<li><a href="presentation.html">presentation</a></li>
-						<li><a href="portfolio.html">gallery</a></li>
-						<li><a href="contact.html">contact</a></li>
+						<li><a href="<?php echo base_url('welcome') ?>">home</a></li>
+						<li><a href="<?php echo base_url('about') ?>">introduction</a></li>
+						<li class="active"><a href="<?php echo base_url('service') ?>">services</a></li>
+						<li><a href="<?php echo base_url('news') ?>">news</a></li>
+						<li><a href="<?php echo base_url('presentation') ?>">presentation</a></li>
+						<li><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
+						<li><a href="<?php echo base_url('contact') ?>">contact</a></li>
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
 		  	</div><!-- /.container -->
@@ -77,7 +77,6 @@
 	</section> <!-- /.section-background -->
 
 
-
 <!--Analysis Laboratory-->
 	<section class="about" id="about">
 		<div class="container section-wrapper">
@@ -88,10 +87,34 @@
 			<div class="row">
 				<div class="col-md-2">
 				</div> <!-- /.col-md-3 -->
+
 				<div class="col-md-8 col-sm-12">
 					<p>
 						Wahana Pamunah Wimbah Industri (PT WPLI) is a company engaged in the management of hazardous and toxic waste materials. PT. WPLI cooporate with some hazardous and toxic waste company to dispose of untreatable waste in incinerator and evaporator equipment owned by PT WPLI.
-					</p>					
+					</p>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<div class="portfolio-item">
+						<div class="portfolio-img">
+							<img src="<?php echo base_url('assets') ?>/images/51.jpg" alt="port-2" class="port-item">
+						</div> <!-- /.portfolio-img -->
+					</div> <!-- /.portfolio-item -->
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<div class="portfolio-item">
+						<div class="portfolio-img">
+							<img src="<?php echo base_url('assets') ?>/images/52.jpg" alt="port-2" class="port-item">
+						</div> <!-- /.portfolio-img -->
+					</div> <!-- /.portfolio-item -->
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<div class="portfolio-item">
+						<div class="portfolio-img">
+							<img src="<?php echo base_url('assets') ?>/images/54.jpg" alt="port-2" class="port-item">
+						</div> <!-- /.portfolio-img -->
+					</div> <!-- /.portfolio-item -->
+				</div>
+
 				</div> <!-- /.col-md-6 -->
 				<div class="col-md-2">
 				</div> <!-- /.col-md-3 -->
@@ -105,13 +128,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<img src="assets/images/footer.png">
+					<img src="<?php echo base_url('assets') ?>/images/footer.png">
 				</div>
 				<div class="col-sm-6">
 					<div class="copy">
-						Office : (0254) 786 0456 / 786 0298 Fax : (0254) 786 0432 
+						Office : (0254) 786 0456 / 786 0298 Fax : (0254) 786 0432
 						<br>
-						Jl. Raya Rangkasbitung Km. 6, RW 1, Desa Parakan, Kecamatan Jawilan, Serang. 
+						Jl. Raya Rangkasbitung Km. 6, RW 1, Desa Parakan, Kecamatan Jawilan, Serang.
 						<br>
 						Copyright &copy; 2018 PT.WPLI. All Rights Reserved.
 					</div>
@@ -120,12 +143,12 @@
 		</div> <!-- /.container -->
 	</footer>
 
-	<script src="assets/js/jquery-1.11.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/contact.js"></script>
-	<!-- // <script src="assets/js/smoothscroll.js"></script> -->
-	<script src="assets/js/script.js"></script>
+	<script src="<?php echo base_url('assets') ?>/js/jquery-1.11.2.min.js"></script>
+    <script src="<?php echo base_url('assets') ?>/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url('assets') ?>/js/owl.carousel.min.js"></script>
+    <script src="<?php echo base_url('assets') ?>/js/contact.js"></script>
+	<!-- // <script src="<?php echo base_url('assets') ?>/js/smoothscroll.js"></script> -->
+	<script src="<?php echo base_url('assets') ?>/js/script.js"></script>
 
 
 </body>
