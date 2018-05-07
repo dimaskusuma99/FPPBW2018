@@ -33,7 +33,7 @@
 
 <!-- Home -->
 	<section class="portfolio-header" id="header">
-		
+
 		<nav class="navbar navbar-default _navbar-fixed-top">
 			<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -75,10 +75,52 @@
 	</section> <!-- /.section-background -->
 
 
+
 <!-- Contact with us -->
 	<section class="contact section-wrapper" id="contact">
 		<div class="container">
 			<div class="row">
+
+				<form class="row form">
+							<h3  text-align"left">Form Permintaan Customer Limbah B3</h3>
+							<pre>
+							<p>Nama Perusahaan						:	<input type:"text" name="Nama Perusahaan" value=""></p>
+							<p>Jenis Perusahaan 					:	<select name="Jenis Perusahaan">
+								<option value="CV"> CV </option>
+								<option value="PT"> PT </option>
+								<option value="RS"> RS </option>
+								<option value="klinik"> klinik</option>
+							</select>
+							<p>Alamat Lengkap Perusahaan 				: 	<input type:"text" name="Alamat Perusahaan" value=""></p>
+							<p> Kode Pos 						:       <input type="text" name="Provinsi" value=""></p>
+							<p> email						 	: 	<input type="text" name="Email"  value=""> </p>
+							<p> Jenis Limbah						: 	<input type="text" name="Jenis Limbah"  value=""> </p>
+							<p> Nomor Tlp/HP						: 	<input type="text" name="telepon"  value=""> </p>
+							<p> Fax							: 	<input type="text" name="Fax"  value=""> </p>
+							<input class="btn btn-sub" type="submit" value="Send Message" align="right">
+						</pre>
+					</form> <!-- /.row -->
+
+					<form class="row form">
+								<h3  text-align"left">Form Permintaan Customer Limbah B3</h3>
+								<pre>
+								<p>Nama Perusahaan						:	<input type:"text" name="Nama Perusahaan" value=""></p>
+								<p>Jenis Perusahaan 					:	<select name="Jenis Perusahaan">
+									<option value="CV"> CV </option>
+									<option value="PT"> PT </option>
+									<option value="RS"> RS </option>
+									<option value="klinik"> klinik</option>
+								</select>
+								<p>Alamat Lengkap Perusahaan 				: 	<input type:"text" name="Alamat Perusahaan" value=""></p>
+								<p> Kode Pos 						:       <input type="text" name="Provinsi" value=""></p>
+								<p> email						 	: 	<input type="text" name="Email"  value=""> </p>
+								<p> Jenis Limbah						: 	<input type="text" name="Jenis Limbah"  value=""> </p>
+								<p> Nomor Tlp/HP						: 	<input type="text" name="telepon"  value=""> </p>
+								<p> Fax							: 	<input type="text" name="Fax"  value=""> </p>
+								<input class="btn btn-sub" type="submit" value="Send Message">
+							</pre>
+						</form> <!-- /.row -->
+
 	            <div class="col-md-3 contact-item col-sm-6 col-xs-12">
 	                <i class="ion-location"></i>
 	                <h3>Address</h3>
@@ -149,9 +191,9 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="copy">
-						Office : (0254) 786 0456 / 786 0298 Fax : (0254) 786 0432 
+						Office : (0254) 786 0456 / 786 0298 Fax : (0254) 786 0432
 						<br>
-						Jl. Raya Rangkasbitung Km. 6, RW 1, Desa Parakan, Kecamatan Jawilan, Serang. 
+						Jl. Raya Rangkasbitung Km. 6, RW 1, Desa Parakan, Kecamatan Jawilan, Serang.
 						<br>
 						Copyright &copy; 2018 PT.WPLI. All Rights Reserved.
 					</div>
@@ -160,7 +202,7 @@
 		</div> <!-- /.container -->
 	</footer>
 
-	
+
 
 
 	<script src="<?php echo base_url('assets') ?>/js/jquery-1.11.2.min.js"></script>

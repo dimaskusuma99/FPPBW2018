@@ -122,7 +122,7 @@
 					<div class="col-sm-4 col-xs-12">
 						<div class="portfolio-item">
 							<div class="portfolio-img">
-								<img src="<?php echo base_url('assets') ?>/images/36.jpg" alt="port-2" class="port-item">
+								<img src="<?php echo base_url('assets') ?>/images/57.jpg" alt="port-2" class="port-item">
 							</div> <!-- /.portfolio-img -->
 						</div> <!-- /.portfolio-item -->
 					</div>

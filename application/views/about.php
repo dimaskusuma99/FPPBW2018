@@ -29,11 +29,6 @@
 			<!--[if IE 8]>
 		    	<script src="<?php echo base_url('assets') ?>/js/selectivizr.js"></script>
 		    <![endif]-->
-<<<<<<< HEAD
-
-=======
-		
->>>>>>> 9be4e365571c1aca01afd7d284469c4ee556b38d
 	</head>
 <body>
 <!-- Home -->
@@ -83,6 +78,12 @@
 <!-- About Us -->
 	<section class="about" id="about">
 		<div class="container section-wrapper">
+			<div class="center" align="center">
+			<video width="80%" height="80%" controls>
+				<source src="assets/images/wpli.mp4" type="video/mp4">
+			</video>
+		</div>
+			<br>
 			<h2 class="section-title black">
 				Introduction
 			</h2> <!-- /.section-title -->
@@ -94,7 +95,7 @@
 				<div class="col-md-3 col-sm-3">
 					<img src="<?php echo base_url('assets') ?>/images/about-2.png" alt="about" class="about-img">
 				</div> <!-- /.col-md-3 -->
-				<div class="col-md-6 col-sm-12">
+				<div class="col-md-6 col-sm-12" text-align="center">
 					<p>
 						PT. Wahana Pamunah Limbah Industri is a hazardous waste treatment company. The company was founded in 2004 as the frontier in managing hazardous waste produced by industrial society and has since then accumulated project expertise. Adopting an up-to-date technology and systems which were integrated from developed countries, the company thrives to provide safe, efficient, and simple operation and supervision of hazardous waste management. </p>
 						<br>

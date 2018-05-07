@@ -105,7 +105,7 @@
 				<div class="col-sm-4 col-xs-6">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
-							<img src="<?php echo base_url('assets') ?>/images/36.jpg" alt="port-2" class="port-item">
+							<img src="<?php echo base_url('assets') ?>/images/57.jpg" alt="port-2" class="port-item">
 							<div class="portfolio-img-hover">
 								<a href="#"><img src="<?php echo base_url('assets') ?>/images/plus.png" alt="plus" class="plus"></a>
 							</div> <!-- /.portfolio-img-hover -->
@@ -159,7 +159,7 @@
 				<div class="col-sm-4 col-xs-6">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
-							<img src="<?php echo base_url('assets') ?>/images/41.jpeg" alt="port-5" class="port-item">
+							<img src="<?php echo base_url('assets') ?>/images/41.jpg" alt="port-5" class="port-item">
 							<div class="portfolio-img-hover">
 								<a href="#"><img src="<?php echo base_url('assets') ?>/images/plus.png" alt="plus" class="plus"></a>
 							</div> <!-- /.portfolio-img-hover -->
@@ -222,7 +222,7 @@
 						</div> <!-- /.portfolio-img -->
 						<div class="portfolio-item-details">
 							<div class="portfolio-item-name">
-								Site<br><small>WPLI</small>
+								Receptionist<br><small>WPLI</small>
 							</div> <!-- /.portfolio-item-name -->
 							<div class="port-heart">
 								<i class="ion-ios-heart-outline"></i> 564
@@ -240,7 +240,7 @@
 						</div> <!-- /.portfolio-img -->
 						<div class="portfolio-item-details">
 							<div class="portfolio-item-name">
-								Access <br><small>WPLI</small>
+								Lobby <br><small>WPLI</small>
 							</div> <!-- /.portfolio-item-name -->
 							<div class="port-heart">
 								<i class="ion-ios-heart-outline"></i> 564
@@ -276,7 +276,7 @@
 						</div> <!-- /.portfolio-img -->
 						<div class="portfolio-item-details">
 							<div class="portfolio-item-name">
-								Site <br><small>WPLI </small>
+								Gate <br><small>WPLI </small>
 							</div> <!-- /.portfolio-item-name -->
 							<div class="port-heart">
 								<i class="ion-ios-heart-outline"></i> 564

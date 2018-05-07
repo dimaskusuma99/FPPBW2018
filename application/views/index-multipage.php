@@ -56,6 +56,7 @@
 						<li><a href="<?php echo base_url('presentation') ?>">presentation</a></li>
 						<li><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
 						<li><a href="<?php echo base_url('contact') ?>">contact</a></li>
+						<li><a href="<?php echo base_url('login') ?>">login</a></li>
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
 		  	</div><!-- /.container -->
@@ -69,9 +70,6 @@
 					<p class="header-subtitle">
 						"kami peduli"
 					</p>
-					<video width="80%" height="80%" controls>
-						<source src="assets/images/wpli.mp4" type="video/mp4">
-					</video>
 				</div> <!-- /.header-wrapper -->
 			</div>
 		</div> <!-- /.container -->
