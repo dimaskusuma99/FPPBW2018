@@ -57,6 +57,7 @@
 						<li><a href="<?php echo base_url('news') ?>">news</a></li>
 						<li><a href="<?php echo base_url('presentation') ?>">presentation</a></li>
 						<li class="active"><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
+						<li><a href="<?php echo base_url('order') ?>">order</a></li>
 						<li><a href="<?php echo base_url('contact') ?>">contact</a></li>
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
@@ -84,7 +85,7 @@
 			</h2> <!-- /.section-title -->
 			<div class="underline purple"></div>
 			<div class="row">
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4 col-xs-12">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
 							<img src="<?php echo base_url('assets') ?>/images/35.jpg" alt="port-1" class="port-item">
@@ -102,7 +103,7 @@
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4 col-xs-12">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
 							<img src="<?php echo base_url('assets') ?>/images/57.jpg" alt="port-2" class="port-item">
@@ -120,7 +121,7 @@
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4 col-xs-12">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
 							<img src="<?php echo base_url('assets') ?>/images/39.jpg" alt="port-3" class="port-item">
@@ -138,7 +139,7 @@
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4 col-xs-12">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
 							<img src="<?php echo base_url('assets') ?>/images/40.jpg" alt="port-4" class="port-item">
@@ -156,7 +157,7 @@
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4 col-xs-12">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
 							<img src="<?php echo base_url('assets') ?>/images/41.jpg" alt="port-5" class="port-item">
@@ -174,7 +175,7 @@
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4 col-xs-12">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
 							<img src="<?php echo base_url('assets') ?>/images/42.jpg" alt="port-6" class="port-item">
@@ -194,7 +195,7 @@
 				</div> <!-- /.col-md-4 -->
 			</div> <!-- /.row -->
 			<div class="row">
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4 col-xs-12">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
 							<img src="<?php echo base_url('assets') ?>/images/44.jpg" alt="port-1" class="port-item">
@@ -212,7 +213,7 @@
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4 col-xs-12">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
 							<img src="<?php echo base_url('assets') ?>/images/45.jpg" alt="port-2" class="port-item">
@@ -230,7 +231,7 @@
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4 col-xs-12">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
 							<img src="<?php echo base_url('assets') ?>/images/46.jpg" alt="port-3" class="port-item">
@@ -248,7 +249,7 @@
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4 col-xs-12">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
 							<img src="<?php echo base_url('assets') ?>/images/47.jpg" alt="port-4" class="port-item">
@@ -266,7 +267,7 @@
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4 col-xs-12">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
 							<img src="<?php echo base_url('assets') ?>/images/49.jpg" alt="port-5" class="port-item">
@@ -284,7 +285,7 @@
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4 col-xs-12">
 					<div class="portfolio-item">
 						<div class="portfolio-img">
 							<img src="<?php echo base_url('assets') ?>/images/50.jpg" alt="port-6" class="port-item">

@@ -56,6 +56,7 @@
 						<li><a href="<?php echo base_url('news') ?>">news</a></li>
 						<li><a href="<?php echo base_url('presentation') ?>">presentation</a></li>
 						<li><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
+						<li><a href="<?php echo base_url('order') ?>">order</a></li>
 						<li class="active"><a href="<?php echo base_url('contact') ?>">contact</a></li>
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
@@ -80,46 +81,6 @@
 	<section class="contact section-wrapper" id="contact">
 		<div class="container">
 			<div class="row">
-
-				<form class="row form">
-							<h3  text-align"left">Form Permintaan Customer Limbah B3</h3>
-							<pre>
-							<p>Nama Perusahaan						:	<input type:"text" name="Nama Perusahaan" value=""></p>
-							<p>Jenis Perusahaan 					:	<select name="Jenis Perusahaan">
-								<option value="CV"> CV </option>
-								<option value="PT"> PT </option>
-								<option value="RS"> RS </option>
-								<option value="klinik"> klinik</option>
-							</select>
-							<p>Alamat Lengkap Perusahaan 				: 	<input type:"text" name="Alamat Perusahaan" value=""></p>
-							<p> Kode Pos 						:       <input type="text" name="Provinsi" value=""></p>
-							<p> email						 	: 	<input type="text" name="Email"  value=""> </p>
-							<p> Jenis Limbah						: 	<input type="text" name="Jenis Limbah"  value=""> </p>
-							<p> Nomor Tlp/HP						: 	<input type="text" name="telepon"  value=""> </p>
-							<p> Fax							: 	<input type="text" name="Fax"  value=""> </p>
-							<input class="btn btn-sub" type="submit" value="Send Message" align="right">
-						</pre>
-					</form> <!-- /.row -->
-
-					<form class="row form">
-								<h3  text-align"left">Form Permintaan Customer Limbah B3</h3>
-								<pre>
-								<p>Nama Perusahaan						:	<input type:"text" name="Nama Perusahaan" value=""></p>
-								<p>Jenis Perusahaan 					:	<select name="Jenis Perusahaan">
-									<option value="CV"> CV </option>
-									<option value="PT"> PT </option>
-									<option value="RS"> RS </option>
-									<option value="klinik"> klinik</option>
-								</select>
-								<p>Alamat Lengkap Perusahaan 				: 	<input type:"text" name="Alamat Perusahaan" value=""></p>
-								<p> Kode Pos 						:       <input type="text" name="Provinsi" value=""></p>
-								<p> email						 	: 	<input type="text" name="Email"  value=""> </p>
-								<p> Jenis Limbah						: 	<input type="text" name="Jenis Limbah"  value=""> </p>
-								<p> Nomor Tlp/HP						: 	<input type="text" name="telepon"  value=""> </p>
-								<p> Fax							: 	<input type="text" name="Fax"  value=""> </p>
-								<input class="btn btn-sub" type="submit" value="Send Message">
-							</pre>
-						</form> <!-- /.row -->
 
 	            <div class="col-md-3 contact-item col-sm-6 col-xs-12">
 	                <i class="ion-location"></i>

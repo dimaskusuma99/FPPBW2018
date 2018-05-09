@@ -57,6 +57,7 @@
 						<li><a href="<?php echo base_url('news') ?>">news</a></li>
 						<li><a href="<?php echo base_url('presentation') ?>">presentation</a></li>
 						<li><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
+						<li><a href="<?php echo base_url('order') ?>">order</a></li>
 						<li><a href="<?php echo base_url('contact') ?>">contact</a></li>
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
