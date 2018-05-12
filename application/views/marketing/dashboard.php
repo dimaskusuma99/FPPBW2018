@@ -1,21 +1,19 @@
 
 <!DOCTYPE html>
 <html>
-<?php $this->load->view('admin/head') ?>
+<?php $this->load->view('marketing/head') ?>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
-<?php $this->load->view('admin/header') ?>
+<?php $this->load->view('marketing/header') ?>
   <!-- Left side column. contains the logo and sidebar -->
-<?php $this->load->view('admin/leftbar') ?>
+<?php $this->load->view('marketing/leftbar') ?>
 
-  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
         Dashboard
-        <small>Version 2.0</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -33,6 +31,6 @@
   </div>
   <!-- /.content-wrapper -->
 
-<?php $this->load->view('admin/footer') ?>
+<?php $this->load->view('marketing/footer') ?>
 </body>
 </html>

@@ -10,14 +10,16 @@
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
-		<title>CONTACT | PT. WAHANA PAMUNAH LIMBAH INDUSTRI</title>
+		<title>ORDER | PT. WAHANA PAMUNAH LIMBAH INDUSTRI</title>
 		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/ionicons.min.css">
 		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/owl.carousel.css">
 		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/owl.theme.css">
 	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/main.css">
 	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/section.css">
-	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/contact.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/order.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets/template/back/bower_components') ?>/font-awesome/css/font-awesome.min.css">
+
 	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!--[if lt IE 9]>
 				<script src="<?php echo base_url('assets') ?>/js/html5shiv.js"></script>
@@ -59,11 +61,11 @@
 						<li class="dropdown">
 				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Order <span class="caret"></span></a>
 				              <ul class="dropdown-menu" role="menu">
-				                <li><a href="<?php echo base_url('limbah') ?>">Limbah B3</a></li>
-				                <li><a href="<?php echo base_url('batako') ?>">Batako</a></li>
+				                <li><a href="#">Limbah B3</a></li>
+				                <li><a href="#">Batako</a></li>
 				              </ul>
-				         </li>
-						<li class="active"><a href="<?php echo base_url('contact') ?>">contact</a></li>
+				            </li>
+						<li><a href="<?php echo base_url('contact') ?>">contact</a></li>
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
 		  	</div><!-- /.container -->
@@ -76,79 +78,88 @@
 		<div class="container">
 			<ol class="breadcrumb">
 				<li><a href="index-multipage.html">Home</a></li>
-				<li class="active">&nbsp;contact</li>
+				<li class="active">&nbsp;order</li>
 			</ol>
 		</div> <!-- /.container -->
 	</section> <!-- /.section-background -->
 
 
 
-<!-- Contact with us -->
-	<section class="contact section-wrapper" id="contact">
+<!-- Form isian custommer limbah B3-->
 		<div class="container">
 			<div class="row">
+				<form action="<?php echo base_url('request_batako/tambah_aksi')?>" method="post">
+					<h1>Form Permintaan Customer Batako</h1>
+						<div class="contentform">
+							<div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
+								<div class="leftcontact">
+									<div class="form-group">
+										<p>Nama Customer :<span>*</span></p>
+										<span class="icon-case"><i class="fa fa-building-o"></i></span>
+										<input type="text" name="nama_customer" id="nama_customer" required="required"/>
+										<div class="validation"></div>
+									 </div>
+									<div class="form-group">
+										<p>Alamat : <span>*</span></p>
+										<span class="icon-case"><i class="fa fa-home"></i></span>
+										<input type="text" name="alamat" id="alamat" required="required"/>
+										<select type="text" name="provinsi" id="provinsi" required="required" placeholder="Provinsi">
+											<option value='0'>--Pilih Provinsi--</option>
+											<?php 
+											foreach ($provinsi as $prov) {
+												echo "<option value='$prov[id]'>$prov[name]</option>";}?>
+										</select>
+										<select type="text" name="kabupaten" id="kabupaten-kota" required="required" placeholder="Kabupaten"/>
+											<option value='0'>--Pilih Kabupaten--</option>
+										</select>
+									<div class="validation"></div>
+								</div>
+									<div class="form-group">
+									<p>Kode Pos :<span>*</span></p>
+									<span class="icon-case"><i class="fa fa-map-marker"></i></span>
+										<input type="text" name="kode_pos" id="kode_pos" required="required"/>
+									<div class="validation"></div>
+								</div>
+							</div>
+								<div class="rightcontact">
+									<div class="form-group">
+									<p>Status :<span>*</span></p>
+									<span class="icon-case"><i class="fa fa-info"></i></span>
+										<input type="text" name="status" id="status" required="required"/>
+									<div class="validation"></div>
+								</div>
+									<div class="form-group">
+									<p>No. Identitas :<span>*</span></p>
+									<span class="icon-case"><i class="fa fa-address-card"></i></span>
+										<input type="text" name="no_identitas" id="no_identitas" required="required"/>
+									<div class="validation"></div>
+								</div>
+									<div class="form-group">
+									<p>E-mail :<span>*</span></p>
+									<span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+										<input type="email" name="email" id="email" required="required"/>
+									<div class="validation"></div>
+								</div>
+									<div class="form-group">
+									<p>Nomor Tlp/HP : <span>*</span></p>
+									<span class="icon-case"><i class="fa fa-phone"></i></span>
+									<input type="text" name="no_telp" id="no_telp" required="required"/>
+										<div class="validation"></div>
+									</div>
 
-	            <div class="col-md-3 contact-item col-sm-6 col-xs-12">
-	                <i class="ion-location"></i>
-	                <h3>Address</h3>
-	                <p class="contact">
-	                   Jl. Raya Rangkasbitung Km. 6, RW 1, Desa Parakan,
-					   Kecamatan Jawilan, Serang.
-	                </p>
-	            </div>
-	            <div class="col-md-3 contact-item col-sm-6 col-xs-12">
-	                <i class="ion-ios-telephone"></i>
-	                <h3>Phone</h3>
-	                <p class="contact">
-	                    (0254) 786 0456 / 786 0298
-	                </p>
-	            </div>
-	            <div class="col-md-3 contact-item col-sm-6 col-xs-12">
-	                <i class="ion-printer"></i>
-	                <h3>Fax</h3>
-	                <p class="contact">
-	                    (0254) 786 0432
-	                </p>
-	            </div>
-	            <div class="col-md-3 contact-item col-sm-6 col-xs-12">
-	                <i class="ion-ios-email"></i>
-	                <h3>Email Address</h3>
-	                <p class="contact">
-	                    info@wpli.co.id
-	               	</p>
-	            </div>
+									<div class="form-group">
+									<p>Fax : <span>*</span></p>
+									<span class="icon-case"><i class="fa fa-fax"></i></span>
+									<input type="text" name="fax" id="fax" required="required"/>
+										<div class="validation"></div>
+									</div>
 
-
-	        </div> <!-- /.row -->
-	        <form class="row form">
-                <h3>Leave A Message</h3>
-                <div class="col-sm-4 col-xs-12 form-group">
-                    <label class="sr-only">Name</label>
-                    <input name="name" class="form-control" type="text" placeholder="First Name">
-                </div> <!-- /.form-group -->
-                <div class="col-sm-4 col-xs-12 form-group">
-                    <label class="sr-only">Email</label>
-                    <input name="email" class="form-control" type="email" placeholder="Email address">
-                </div> <!-- /.form-group -->
-                <div class="col-sm-4 col-xs-12 form-group">
-                    <label class="sr-only">Website</label>
-                    <input name="website" class="form-control" type="text" placeholder="Your website">
-                </div> <!-- /.form-group -->
-                <div class="row">
-                    <div class="col-md-12 col-xs-12 form-group">
-                        <label class="sr-only">Message</label>
-                        <textarea class="message form-control" placeholder="Write message"></textarea>
-                    </div> <!-- /.form-group -->
-                    <input class="btn btn-sub" type="submit" value="Send Message">
-                </div>
-            </form> <!-- /.row -->
-		</div> <!-- /.container -->
-	</section> <!-- /.contact -->
-
-
-
-
-
+									</div>
+									</div>
+									
+									<button type="submit" class="bouton-contact">Send</button>
+									</form>
+					</div>
 <!-- Footer -->
 	<footer>
 		<div class="container">
@@ -169,15 +180,40 @@
 		</div> <!-- /.container -->
 	</footer>
 
-
-
-
 	<script src="<?php echo base_url('assets') ?>/js/jquery-1.11.2.min.js"></script>
     <script src="<?php echo base_url('assets') ?>/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url('assets') ?>/js/owl.carousel.min.js"></script>
     <script src="<?php echo base_url('assets') ?>/js/contact.js"></script>
 	<!-- // <script src="<?php echo base_url('assets') ?>/js/smoothscroll.js"></script> -->
 	<script src="<?php echo base_url('assets') ?>/js/script.js"></script>
+		<script type="text/javascript">
+		$(function(){
+
+		$.ajaxSetup({
+		type:"POST",
+		url: "<?php echo base_url('select/ambil_data') ?>",
+		cache: false,
+		});
+
+		$("#provinsi").change(function(){
+
+		var value=$(this).val();
+		if(value>0){
+		$.ajax({
+		data:{modul:'kabupaten',id:value},
+		success: function(respond){
+		$("#kabupaten-kota").html(respond);
+		}
+		})
+		}
+
+		});
+
+		$("#kabupaten-kota").change(function(){
+		});
+
+		});
+	</script>
 
 
 </body>

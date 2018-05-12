@@ -8,6 +8,7 @@ class Dashboard extends CI_Controller {
         parent::__construct();
         //load model admin
         $this->load->model('admin');
+
     }
 
     public function index()
@@ -15,7 +16,21 @@ class Dashboard extends CI_Controller {
         if($this->admin->logged_id())
         {
 
-            $this->load->view("admin/dashboard");         
+           $user_level = $this->session->userdata('user_level');
+            
+                if($user_level == 'admin')
+                {
+                    $this->load->view("admin/dashboard"); 
+                }
+            
+                elseif($user_level == 'marketing')
+                {
+                    $this->load->view("marketing/dashboard"); 
+                }
+                else
+                {
+                    redirect('login');
+                }       
 
         }else{
 
@@ -30,5 +45,6 @@ class Dashboard extends CI_Controller {
         $this->session->sess_destroy();
         redirect('login');
     }
+
 
 }

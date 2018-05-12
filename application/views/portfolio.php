@@ -57,7 +57,13 @@
 						<li><a href="<?php echo base_url('news') ?>">news</a></li>
 						<li><a href="<?php echo base_url('presentation') ?>">presentation</a></li>
 						<li class="active"><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
-						<li><a href="<?php echo base_url('order') ?>">order</a></li>
+						<li class="dropdown">
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Order <span class="caret"></span></a>
+				              <ul class="dropdown-menu" role="menu">
+				                <li><a href="<?php echo base_url('limbah') ?>">Limbah B3</a></li>
+				                <li><a href="<?php echo base_url('batako') ?>">Batako</a></li>
+				              </ul>
+				         </li>
 						<li><a href="<?php echo base_url('contact') ?>">contact</a></li>
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
@@ -97,9 +103,6 @@
 							<div class="portfolio-item-name">
 								Machine <br><small>WPLI</small>
 							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i> 564
-							</div> <!-- /.port-heart -->
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
@@ -115,9 +118,6 @@
 							<div class="portfolio-item-name">
 								Transportation <br><small>WPLI</small>
 							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i> 564
-							</div> <!-- /.port-heart -->
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
@@ -133,9 +133,6 @@
 							<div class="portfolio-item-name">
 								Site <br><small>WPLI</small>
 							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i> 564
-							</div> <!-- /.port-heart -->
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
@@ -151,9 +148,6 @@
 							<div class="portfolio-item-name">
 								Site<br><small>WPLI</small>
 							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i> 564
-							</div> <!-- /.port-heart -->
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
@@ -169,9 +163,6 @@
 							<div class="portfolio-item-name">
 								Access <br><small>WPLI</small>
 							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i> 564
-							</div> <!-- /.port-heart -->
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
@@ -187,9 +178,6 @@
 							<div class="portfolio-item-name">
 								Laboratory<br><small>WPLI</small>
 							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i> 564
-							</div> <!-- /.port-heart -->
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
@@ -207,9 +195,6 @@
 							<div class="portfolio-item-name">
 								Site<br><small>WPLI</small>
 							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i> 564
-							</div> <!-- /.port-heart -->
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
@@ -225,9 +210,6 @@
 							<div class="portfolio-item-name">
 								Receptionist<br><small>WPLI</small>
 							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i> 564
-							</div> <!-- /.port-heart -->
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
@@ -243,9 +225,6 @@
 							<div class="portfolio-item-name">
 								Lobby <br><small>WPLI</small>
 							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i> 564
-							</div> <!-- /.port-heart -->
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
@@ -261,9 +240,6 @@
 							<div class="portfolio-item-name">
 								Office <br><small>WPLI</small>
 							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i> 564
-							</div> <!-- /.port-heart -->
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
@@ -279,9 +255,6 @@
 							<div class="portfolio-item-name">
 								Gate <br><small>WPLI </small>
 							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i> 564
-							</div> <!-- /.port-heart -->
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
@@ -297,9 +270,6 @@
 							<div class="portfolio-item-name">
 								Machine<br><small>WPLI</small>
 							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i> 564
-							</div> <!-- /.port-heart -->
 						</div> <!-- /.portfolio-item-details -->
 					</div> <!-- /.portfolio-item -->
 				</div> <!-- /.col-md-4 -->
