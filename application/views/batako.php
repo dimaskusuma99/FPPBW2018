@@ -61,8 +61,8 @@
 						<li class="dropdown">
 				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Order <span class="caret"></span></a>
 				              <ul class="dropdown-menu" role="menu">
-				                <li><a href="#">Limbah B3</a></li>
-				                <li><a href="#">Batako</a></li>
+				                <li><a href="<?php echo base_url('limbah') ?>">Limbah B3</a></li>
+				                <li><a href="<?php echo base_url('batako') ?>">Batako</a></li>
 				              </ul>
 				            </li>
 						<li><a href="<?php echo base_url('contact') ?>">contact</a></li>

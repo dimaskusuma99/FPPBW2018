@@ -1,11 +1,40 @@
 
 <!DOCTYPE html>
 <html>
-<?php  $this->load->view('marketing/head') ?>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>WPLI</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="shorcut icon" type="text/css" href="<?php echo base_url().''?>">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="<?php echo base_url().'assets/bootstrap/css/bootstrap.min.css'?>">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'?>">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/datatables/dataTables.bootstrap.css'?>">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="<?php echo base_url().'assets/dist/css/AdminLTE.min.css'?>">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="<?php echo base_url().'assets/dist/css/skins/_all-skins.min.css'?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/toast/jquery.toast.min.css'?>"/>
+   <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/order.css">
+
+  <?php
+            function limit_words($string, $word_limit){
+                $words = explode(" ",$string);
+                return implode(" ",array_splice($words,0,$word_limit));
+            }
+
+    ?>
+
+</head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
-<?php $this->load->view('marketing/header') ?>
+<?php $this->load->view('marketing/v_header') ?>
   <!-- Left side column. contains the logo and sidebar -->
  <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
@@ -15,26 +44,29 @@
 
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
-        <li>
-          <a href="<?php echo base_url('dashboard')?>">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+    <ul class="sidebar-menu">
+        <li class="header">Menu Utama</li>
+        <li class="">
+          <a href="<?php echo base_url().'marketing/dashboard'?>">
+            <i class="fa fa-home"></i> <span>Dashboard</span>
+            <span class="pull-right-container">
+              <small class="label pull-right"></small>
+            </span>
           </a>
         </li>
-        <li class="active treeview menu-open">
+        <li class="active treeview">
           <a href="#">
-            <i class="fa fa-bell"></i> <span>Request</span>
+            <i class="fa fa-bell"></i>
+            <span>Request</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url('request_limbah')?>"><i class="fa fa-circle-o"></i> Request Limbah</a></li>
-            <li><a href="<?php echo base_url('request_batako')?>"><i class="fa fa-circle-o"></i> Request Batako</a></li>
+            <li><a href="<?php echo base_url().'marketing/request_limbah'?>"><i class="fa fa-trash"></i> Limbah</a></li>
+            <li><a href="<?php echo base_url().'marketing/request_batako'?>"><i class="fa fa-cubes"></i> Batako</a></li>
           </ul>
         </li>
-       
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -44,9 +76,6 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
-        Request
-      </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Request</li>
@@ -60,7 +89,7 @@
     <div class="container">
       <div class="row">
         <?php foreach($limbah as $u){ ?>
-        <form action="<?php echo base_url('request_limbah/update')?>" method="post">
+        <form action="<?php echo base_url('marketing/request_limbah/update')?>" method="post">
           <h1>Form Permintaan Customer Limbah B3</h1>
             <div class="contentform">
               <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
@@ -167,6 +196,34 @@
     </section>
     <!-- /.content -->
   </div>
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 1.0
+    </div>
+    <strong>Copyright &copy; 2018 WPLI.</strong> All rights reserved.
+  </footer>
+
+
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="<?php echo base_url().'assets/plugins/jQuery/jquery-2.2.3.min.js'?>"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="<?php echo base_url().'assets/bootstrap/js/bootstrap.min.js'?>"></script>
+<!-- DataTables -->
+<script src="<?php echo base_url().'assets/plugins/datatables/jquery.dataTables.min.js'?>"></script>
+<script src="<?php echo base_url().'assets/plugins/datatables/dataTables.bootstrap.min.js'?>"></script>
+<!-- SlimScroll -->
+<script src="<?php echo base_url().'assets/plugins/slimScroll/jquery.slimscroll.min.js'?>"></script>
+<!-- FastClick -->
+<script src="<?php echo base_url().'assets/plugins/fastclick/fastclick.js'?>"></script>
+<!-- AdminLTE App -->
+<script src="<?php echo base_url().'assets/dist/js/app.min.js'?>"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="<?php echo base_url().'assets/dist/js/demo.js'?>"></script>
+<script type="text/javascript" src="<?php echo base_url().'assets/plugins/toast/jquery.toast.min.js'?>"></script>
   <!-- /.content-wrapper -->
 <!-- page script -->
     <script type="text/javascript">
@@ -207,7 +264,5 @@
   }
 </script>
 
-<?php $this->load->view('marketing/footer') ?>
 </body>
 </html>
-

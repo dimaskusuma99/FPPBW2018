@@ -120,24 +120,24 @@
 
 
 	        </div> <!-- /.row -->
-	        <form class="row form">
+	        <form action="<?php echo base_url('admin/inbox/tambah_aksi') ?>" method="post" class="row form" >
                 <h3>Leave A Message</h3>
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Name</label>
-                    <input name="name" class="form-control" type="text" placeholder="First Name">
+                    <input name="inbox_nama" class="form-control" type="text" placeholder="First Name">
                 </div> <!-- /.form-group -->
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Email</label>
-                    <input name="email" class="form-control" type="email" placeholder="Email address">
+                    <input name="inbox_email" class="form-control" type="email" placeholder="Email address">
                 </div> <!-- /.form-group -->
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Website</label>
-                    <input name="website" class="form-control" type="text" placeholder="Your website">
+                    <input name="inbox_kontak" class="form-control" type="text" placeholder="Your website">
                 </div> <!-- /.form-group -->
                 <div class="row">
                     <div class="col-md-12 col-xs-12 form-group">
                         <label class="sr-only">Message</label>
-                        <textarea class="message form-control" placeholder="Write message"></textarea>
+                        <textarea name="inbox_pesan" class="message form-control" placeholder="Write message"></textarea>
                     </div> <!-- /.form-group -->
                     <input class="btn btn-sub" type="submit" value="Send Message">
                 </div>
