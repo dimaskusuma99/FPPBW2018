@@ -7,10 +7,11 @@
 <!--<![endif]-->
 	<head>
 		<!-- meta -->
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
 		<title>NEWS | PT. WAHANA PAMUNAH LIMBAH INDUSTRI</title>
+
 
 
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -24,7 +25,7 @@
 		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/owl.theme.css">
 	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/main.css">
 	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/section.css">
-			<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/news.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/news.css">
 	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!--[if lt IE 9]>
 				<script src="<?php echo base_url('assets') ?>/js/html5shiv.js"></script>
@@ -34,6 +35,14 @@
 			<!--[if IE 8]>
 		    	<script src="<?php echo base_url('assets') ?>/js/selectivizr.js"></script>
 		    <![endif]-->
+		  <?php
+            error_reporting(0);
+            function limit_words($string, $word_limit){
+                $words = explode(" ",$string);
+                return implode(" ",array_splice($words,0,$word_limit));
+            }
+
+        ?>
 
 
 </head>
@@ -89,43 +98,7 @@
 			</ol>
 		</div> <!-- /.container -->
 	</section> <!-- /.section-background -->
-<!--
-	<div id="demo" class="carousel slide" data-ride="carousel" align="center">
-	  <ul class="carousel-indicators">
-	    <li data-target="#demo" data-slide-to="0" class="active"></li>
-	    <li data-target="#demo" data-slide-to="1"></li>
-	    <li data-target="#demo" data-slide-to="2"></li>
-	  </ul>
-	  <div class="carousel-inner">
-	    <div class="carousel-item active">
-	      <img src="<?php echo base_url('assets') ?>/images/52.jpg" alt="Los Angeles" width="30%" height="30%">
-	      <div class="carousel-caption">
-	        <h3>Los Angeles</h3>
-	        <p>We had such a great time in LA!</p>
-	      </div>
-	    </div>
-	    <div class="carousel-item">
-	      <img src="<?php echo base_url('assets') ?>/images/54.jpg" alt="Chicago" width="10%" height="10%">
-	      <div class="carousel-caption">
-	        <h3>Chicago</h3>
-	        <p>Thank you, Chicago!</p>
-	      </div>
-	    </div>
-	    <div class="carousel-item">
-	      <img src="<?php echo base_url('assets') ?>/images/53.jpg" alt="New York" width="10%" height="10%">
-	      <div class="carousel-caption">
-	        <h3>New York</h3>
-	        <p>We love the Big Apple!</p>
-	      </div>
-	    </div>
-	  </div>
-	  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-	    <span class="carousel-control-prev-icon"></span>
-	  </a>
-	  <a class="carousel-control-next" href="#demo" data-slide="next">
-	    <span class="carousel-control-next-icon"></span>
-	  </a>
-	</div> -->
+
 
 <!-- Portfolio -->
 	<section class="" id="">
@@ -135,46 +108,26 @@
 			</h2> <!-- /.section-title -->
 			<div class="underline purple"></div>
 			<div class="row">
-				<div class="col-sm-4 col-xs-12">
-					<figure class="snip1208">
-  					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample66.jpg" alt="sample66"/>
-  						<div class="date"><span class="day">28</span><span class="month">Oct</span></div><i class="ion-film-marker"></i>
-  						<figcaption>
-    						<h3>The World Ended Yesterday</h3>
-    						<p>
-      						I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway.
-    						</p>
-    					<button>Read More</button>
-  					</figcaption><a href="#"></a>
-						</figure>
+					<?php
+				foreach ($data->result_array() as $j) :
+						$post_id=$j['tulisan_id'];
+						$post_judul=$j['tulisan_judul'];
+						$post_isi=$j['tulisan_isi'];
+						$post_author=$j['tulisan_author'];
+						$post_image=$j['tulisan_gambar'];
+						$post_tglpost=$j['tanggal'];
+						$post_slug=$j['tulisan_slug'];
+				?>
+					<div class="col-md-4 col-xs-12">
+						<img src="<?php echo base_url().'assets/images/'.$post_image;?>" class="img-responsive">
+						<h3><a href="<?php echo base_url().'news/detail/'.$post_slug;?>"><?php echo $post_judul;?></a></h3>
+						<span><?php echo $post_tglpost.' | '.$post_author;?></span>
+						<p><?php echo limit_words($post_isi,10).'...';?></em></p>
+						<p><a href="<?php echo base_url().'news/detail/'.$post_slug;?>" class="btn btn-primary">Selengkapnya <i class="icon-arrow-right"></i></a></p>
 					</div>
-					<div class="col-sm-4 col-xs-12">
-							<figure class="snip1208 hover">
-  							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample9.jpg" alt="sample9" class="img-responsive"/>
-  							<div class="date"><span class="day">17</span><span class="month">Nov</span></div><i class="ion-headphone"> </i>
-  							<figcaption>
-    							<h3>An Abstract Post Heading</h3>
-    								<p>
-      							Sometimes the surest sign that intelligent life exists elsewhere in the universe is that none of it has tried to contact us.
-    								</p>
-    						<button>Read More</button>
-  						</figcaption><a href="#"></a>
-							</figure>
-						</div>
-						<div class="col-sm-4 col-xs-12">
-								<figure class="snip1208">
-  								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample6.jpg" alt="sample6"/>
-  									<div class="date"><span class="day">01</span><span class="month">Dec</span></div><i class="ion-checkmark"> </i>
-  										<figcaption>
-    										<h3>Down with this sort of thing</h3>
-    											<p>
-      											I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway.
-    											</p>
-    										<button>Read More</button>
-  									</figcaption><a href="#"></a>
-									</figure>
-								</div>
+					<?php endforeach;?>
 			</div>
+			<center><?php echo $page;?></center>
 		</div> <!-- /.container -->
 	</section> <!-- /.portfolio -->
 
@@ -201,20 +154,11 @@
 
 
 
-
 	<script src="<?php echo base_url('assets') ?>/js/jquery-1.11.2.min.js"></script>
     <script src="<?php echo base_url('assets') ?>/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url('assets') ?>/js/owl.carousel.min.js"></script>
     <script src="<?php echo base_url('assets') ?>/js/contact.js"></script>
-	<!-- // <script src="<?php echo base_url('assets') ?>/js/smoothscroll.js"></script> -->
 	<script src="<?php echo base_url('assets') ?>/js/script.js"></script>
-
-<script>
-	$(".hover").mouseleave(
-	function () {
-		$(this).removeClass("hover");
-	}
-); </script>
 
 
 </body>

@@ -25,12 +25,12 @@ class Inbox extends CI_Controller {
 
     }
     
-    public function tambah()
+    function tambah()
     {
         $this->load->view('contact', $data);
     }
 
-    public function tambah_aksi(){
+    function tambah_aksi(){
         $data = array(
             'inbox_nama' => $_POST['inbox_nama'],
             'inbox_email' => $_POST['inbox_email'],

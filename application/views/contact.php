@@ -124,20 +124,20 @@
                 <h3>Leave A Message</h3>
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Name</label>
-                    <input name="inbox_nama" class="form-control" type="text" placeholder="First Name">
+                    <input name="inbox_nama" class="form-control" type="text" placeholder="Name" required="required">
                 </div> <!-- /.form-group -->
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Email</label>
-                    <input name="inbox_email" class="form-control" type="email" placeholder="Email address">
+                    <input name="inbox_email" class="form-control" type="email" placeholder="Email" required="required">
                 </div> <!-- /.form-group -->
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Website</label>
-                    <input name="inbox_kontak" class="form-control" type="text" placeholder="Your website">
+                    <input name="inbox_kontak" class="form-control" type="text" placeholder="Company" required="required">
                 </div> <!-- /.form-group -->
                 <div class="row">
                     <div class="col-md-12 col-xs-12 form-group">
                         <label class="sr-only">Message</label>
-                        <textarea name="inbox_pesan" class="message form-control" placeholder="Write message"></textarea>
+                        <textarea name="inbox_pesan" class="message form-control" placeholder="Write message" required="required"></textarea>
                     </div> <!-- /.form-group -->
                     <input class="btn btn-sub" type="submit" value="Send Message">
                 </div>

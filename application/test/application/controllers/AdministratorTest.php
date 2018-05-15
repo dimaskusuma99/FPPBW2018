@@ -7,11 +7,11 @@
  */
 
 /**
- * Description of ContactTest
+ * Description of AdministratorTest
  *
  * @author hans julio
  */
-class ContactTest extends PHPUnit_Framework_TestCase {
+class AdministratorTest extends PHPUnit_Framework_TestCase {
 
     /**
      * @var \RemoteWebDriver
@@ -33,10 +33,6 @@ class ContactTest extends PHPUnit_Framework_TestCase {
         $this->webDriver->get($this->url);
         // checking that page title contains word 'NetBeans'
         $this->assertContains('NetBeans', $this->webDriver->getTitle());
-    }
-    public function test1() {
-        
-        $this->assertEquals(1,1);
     }
 
 }
