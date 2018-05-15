@@ -18,7 +18,7 @@
 	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/main.css">
 	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/section.css">
 		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/order.css">
-		<link rel="stylesheet" href="<?php echo base_url('assets/template/back/bower_components') ?>/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/font-awesome/css/font-awesome.min.css">
 
 	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!--[if lt IE 9]>
@@ -88,7 +88,7 @@
 <!-- Form isian custommer limbah B3-->
 		<div class="container">
 			<div class="row">
-				<form action="<?php echo base_url('request_batako/tambah_aksi')?>" method="post">
+				<form action="<?php echo base_url('marketing/request_batako/tambah_aksi')?>" method="post">
 					<h1>Form Permintaan Customer Batako</h1>
 						<div class="contentform">
 							<div id="sendmessage"> Your message has been sent successfully. Thank you. </div>

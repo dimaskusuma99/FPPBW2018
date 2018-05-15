@@ -1,32 +1,22 @@
-<?php 
- 
+<?php
 class M_kontak extends CI_Model{
-	function tampil_data(){
-		return $this->db->get('tbl_inbox');
-	}
 
 	function input_data($table,$data){
 		$this->db->insert($table,$data);
 	}
 
-	function hapus_data($where,$table){
-		$this->db->where($where);
-		$this->db->delete($table);
+	function get_all_inbox(){
+		$hsl=$this->db->query("SELECT tbl_inbox.*,DATE_FORMAT(inbox_tanggal,'%d %M %Y') AS tanggal FROM tbl_inbox ORDER BY inbox_id DESC");
+		return $hsl;
 	}
 
-	function edit_data($where,$table){		
-	return $this->db->get_where($table,$where);
+	function hapus_kontak($kode){
+		$hsl=$this->db->query("DELETE FROM tbl_inbox WHERE inbox_id='$kode'");
+		return $hsl;
 	}
 
-	function update_data($where,$data,$table){
-		$this->db->where($where);
-		$this->db->update($table,$data);
+	function update_status_kontak(){
+		$hsl=$this->db->query("UPDATE tbl_inbox SET inbox_status='0'");
+		return $hsl;
 	}
-    
-    function getData(){
-         $res = $this->db->get('tbl_inbox');
-        return $res->result_array();
-    }
 }
-
-	

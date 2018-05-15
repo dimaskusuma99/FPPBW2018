@@ -2,8 +2,6 @@
 <?php
     $query=$this->db->query("SELECT * FROM tbl_inbox WHERE inbox_status='1'");
     $jum_pesan=$query->num_rows();
-    $query1=$this->db->query("SELECT * FROM tbl_komentar WHERE komentar_status='0'");
-    $jum_komentar=$query1->num_rows();
 ?>
 <!DOCTYPE html>
 <html>
@@ -51,7 +49,7 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">Menu Utama</li>
-        <li class="active">
+        <li class="">
           <a href="<?php echo base_url().'admin/dashboard'?>">
             <i class="fa fa-home"></i> <span>Dashboard</span>
             <span class="pull-right-container">
@@ -59,7 +57,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-newspaper-o"></i>
             <span>Post</span>

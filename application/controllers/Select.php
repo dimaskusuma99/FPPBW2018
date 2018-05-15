@@ -30,6 +30,8 @@ Class Select extends CI_Controller
 
 	if($modul=="kabupaten"){
 	echo $this->models_select->kabupaten($id);
+
+	
 	}
 }
 

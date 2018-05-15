@@ -17,7 +17,7 @@ class Request_limbah extends CI_Controller {
     
     public function tambah()
     {
-        $this->load->view('order', $data);
+        $this->load->view('limbah', $data);
     }
 
     public function tambah_aksi(){

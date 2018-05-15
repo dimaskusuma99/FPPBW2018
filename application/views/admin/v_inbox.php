@@ -47,7 +47,7 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">Menu Utama</li>
-        <li class="active">
+        <li class="">
           <a href="<?php echo base_url().'admin/dashboard'?>">
             <i class="fa fa-home"></i> <span>Dashboard</span>
             <span class="pull-right-container">
@@ -84,7 +84,7 @@
           </ul>
         </li>
 
-        <li>
+        <li class="active">
           <a href="<?php echo base_url().'admin/inbox'?>">
             <i class="fa fa-envelope"></i> <span>Inbox</span>
             <span class="pull-right-container">
@@ -144,7 +144,7 @@
                 <tbody>
 				<?php
 					$no=0;
-  					foreach($tbl_inbox as $user) :
+  					foreach($user as $user) :
   					   $no++;
                     ?>
                 <tr>

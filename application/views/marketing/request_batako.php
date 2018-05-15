@@ -66,6 +66,16 @@
             <li><a href="<?php echo base_url().'marketing/request_batako'?>"><i class="fa fa-cubes"></i> Batako</a></li>
           </ul>
         </li>
+
+        <li>
+          <a href="<?php echo base_url().'administrator/logout'?>">
+            <i class="fa fa-sign-out"></i> <span>Sign Out</span>
+            <span class="pull-right-container">
+              <small class="label pull-right"></small>
+            </span>
+          </a>
+        </li>
+
       </ul>
     </section>
     <!-- /.sidebar -->

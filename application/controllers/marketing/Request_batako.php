@@ -17,7 +17,7 @@ class Request_batako extends CI_Controller {
     
     public function tambah()
     {
-        $this->load->view('order', $data);
+        $this->load->view('batako', $data);
     }
 
     public function tambah_aksi(){

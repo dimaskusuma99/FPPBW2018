@@ -1,13 +1,14 @@
 <!--Counter Inbox-->
 <?php
     $query=$this->db->query("SELECT * FROM tbl_inbox WHERE inbox_status='1'");
-    $jum_pesan=$query->num_rows();?>
+    $jum_pesan=$query->num_rows();
+?>
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> WPLI | Add Post</title>
+  <title>Teknologi Informasi | Update Post</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/favicon.png'?>">
@@ -41,9 +42,8 @@
    <?php
     $this->load->view('admin/v_header');
   ?>
-
   <!-- Left side column. contains the logo and sidebar -->
-<aside class="main-sidebar">
+   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
 
@@ -123,7 +123,7 @@
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Post</a></li>
-        <li class="active">Add New</li>
+        <li class="active">Update Post</li>
       </ol>
     </section>
 
@@ -135,19 +135,22 @@
         <div class="box-header with-border">
           <h3 class="box-title">Judul</h3>
         </div>
-
-		<form action="<?php echo base_url().'admin/tulisan/simpan_tulisan'?>" method="post" enctype="multipart/form-data">
+		<?php
+        $b=$data->row_array();
+    ?>
+		<form action="<?php echo base_url().'admin/tulisan/update_tulisan'?>" method="post" enctype="multipart/form-data">
 
         <!-- /.box-header -->
         <div class="box-body">
           <div class="row">
             <div class="col-md-10">
-              <input type="text" name="xjudul" class="form-control" placeholder="Judul berita atau artikel" required/>
+              <input type="hidden" name="kode" value="<?php echo $b['tulisan_id'];?>">
+              <input type="text" name="xjudul" class="form-control" value="<?php echo $b['tulisan_judul'];?>" placeholder="Judul berita atau artikel" required/>
             </div>
             <!-- /.col -->
             <div class="col-md-2">
               <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-flat pull-right"><span class="fa fa-pencil"></span> Publish</button>
+                <button type="submit" class="btn btn-primary btn-flat pull-right"><span class="fa fa-pencil"></span> Update</button>
               <!-- /.form-group -->
             </div>
             <!-- /.col -->
@@ -169,7 +172,7 @@
             </div>
             <div class="box-body">
 
-			<textarea id="ckeditor" name="xisi" required></textarea>
+			       <textarea id="ckeditor" name="xisi" required><?php echo $b['tulisan_isi'];?></textarea>
 
             </div>
             <!-- /.box-body -->
@@ -189,24 +192,23 @@
                 <label>Kategori</label>
                 <select class="form-control select2" name="xkategori" style="width: 100%;" required>
                   <option value="">-Pilih-</option>
-				  <?php
-					$no=0;
-					foreach ($kat->result_array() as $i) :
-					   $no++;
-                       $kategori_id=$i['kategori_id'];
-                       $kategori_nama=$i['kategori_nama'];
+        				  <?php
+        					foreach ($kat->result_array() as $i) {
+                               $kategori_id=$i['kategori_id'];
+                               $kategori_nama=$i['kategori_nama'];
+                               if($b['tulisan_kategori_id']==$kategori_id)
+                                  echo "<option value='$kategori_id' selected>$kategori_nama</option>";
+                               else
+                                  echo "<option value='$kategori_id'>$kategori_nama</option>";
+                  }?>
 
-                    ?>
-                  <option value="<?php echo $kategori_id;?>"><?php echo $kategori_nama;?></option>
-				  <?php endforeach;?>
                 </select>
               </div>
 
 			  <div class="form-group">
                 <label>Gambar</label>
-                <input type="file" name="filefoto" style="width: 100%;" required>
+                <input type="file" name="filefoto" style="width: 100%;">
               </div>
-              <!-- /.form group -->
 
 
             </div>
@@ -229,7 +231,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0
     </div>
-    <strong>Copyright &copy; WPLI 2018.</strong> All rights reserved.
+    <strong>Copyright &copy; 2018 <a href="http://darmawan-agung.com">Darmawan Agung</a>.</strong> All rights reserved.
   </footer>
 
 
