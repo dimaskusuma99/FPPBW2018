@@ -56,6 +56,13 @@
 						<li><a href="<?php echo base_url('news') ?>">news</a></li>
 						<li><a href="<?php echo base_url('presentation') ?>">presentation</a></li>
 						<li><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
+						<li class="dropdown">
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Order <span class="caret"></span></a>
+				              <ul class="dropdown-menu" role="menu">
+				                <li><a href="<?php echo base_url('limbah') ?>">Limbah B3</a></li>
+				                <li><a href="<?php echo base_url('batako') ?>">Batako</a></li>
+				              </ul>
+				         </li>
 						<li class="active"><a href="<?php echo base_url('contact') ?>">contact</a></li>
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
@@ -80,46 +87,6 @@
 	<section class="contact section-wrapper" id="contact">
 		<div class="container">
 			<div class="row">
-
-				<form class="row form">
-							<h3  text-align"left">Form Permintaan Customer Limbah B3</h3>
-							<pre>
-							<p>Nama Perusahaan						:	<input type:"text" name="Nama Perusahaan" value=""></p>
-							<p>Jenis Perusahaan 					:	<select name="Jenis Perusahaan">
-								<option value="CV"> CV </option>
-								<option value="PT"> PT </option>
-								<option value="RS"> RS </option>
-								<option value="klinik"> klinik</option>
-							</select>
-							<p>Alamat Lengkap Perusahaan 				: 	<input type:"text" name="Alamat Perusahaan" value=""></p>
-							<p> Kode Pos 						:       <input type="text" name="Provinsi" value=""></p>
-							<p> email						 	: 	<input type="text" name="Email"  value=""> </p>
-							<p> Jenis Limbah						: 	<input type="text" name="Jenis Limbah"  value=""> </p>
-							<p> Nomor Tlp/HP						: 	<input type="text" name="telepon"  value=""> </p>
-							<p> Fax							: 	<input type="text" name="Fax"  value=""> </p>
-							<input class="btn btn-sub" type="submit" value="Send Message" align="right">
-						</pre>
-					</form> <!-- /.row -->
-
-					<form class="row form">
-								<h3  text-align"left">Form Permintaan Customer Limbah B3</h3>
-								<pre>
-								<p>Nama Perusahaan						:	<input type:"text" name="Nama Perusahaan" value=""></p>
-								<p>Jenis Perusahaan 					:	<select name="Jenis Perusahaan">
-									<option value="CV"> CV </option>
-									<option value="PT"> PT </option>
-									<option value="RS"> RS </option>
-									<option value="klinik"> klinik</option>
-								</select>
-								<p>Alamat Lengkap Perusahaan 				: 	<input type:"text" name="Alamat Perusahaan" value=""></p>
-								<p> Kode Pos 						:       <input type="text" name="Provinsi" value=""></p>
-								<p> email						 	: 	<input type="text" name="Email"  value=""> </p>
-								<p> Jenis Limbah						: 	<input type="text" name="Jenis Limbah"  value=""> </p>
-								<p> Nomor Tlp/HP						: 	<input type="text" name="telepon"  value=""> </p>
-								<p> Fax							: 	<input type="text" name="Fax"  value=""> </p>
-								<input class="btn btn-sub" type="submit" value="Send Message">
-							</pre>
-						</form> <!-- /.row -->
 
 	            <div class="col-md-3 contact-item col-sm-6 col-xs-12">
 	                <i class="ion-location"></i>
@@ -153,24 +120,24 @@
 
 
 	        </div> <!-- /.row -->
-	        <form class="row form">
+	        <form action="<?php echo base_url('admin/inbox/tambah_aksi') ?>" method="post" class="row form" >
                 <h3>Leave A Message</h3>
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Name</label>
-                    <input name="name" class="form-control" type="text" placeholder="First Name">
+                    <input name="inbox_nama" class="form-control" type="text" placeholder="First Name">
                 </div> <!-- /.form-group -->
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Email</label>
-                    <input name="email" class="form-control" type="email" placeholder="Email address">
+                    <input name="inbox_email" class="form-control" type="email" placeholder="Email address">
                 </div> <!-- /.form-group -->
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Website</label>
-                    <input name="website" class="form-control" type="text" placeholder="Your website">
+                    <input name="inbox_kontak" class="form-control" type="text" placeholder="Your website">
                 </div> <!-- /.form-group -->
                 <div class="row">
                     <div class="col-md-12 col-xs-12 form-group">
                         <label class="sr-only">Message</label>
-                        <textarea class="message form-control" placeholder="Write message"></textarea>
+                        <textarea name="inbox_pesan" class="message form-control" placeholder="Write message"></textarea>
                     </div> <!-- /.form-group -->
                     <input class="btn btn-sub" type="submit" value="Send Message">
                 </div>

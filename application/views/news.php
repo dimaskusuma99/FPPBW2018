@@ -12,7 +12,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
 		<title>NEWS | PT. WAHANA PAMUNAH LIMBAH INDUSTRI</title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
@@ -24,7 +24,7 @@
 		<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/owl.theme.css">
 	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/main.css">
 	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/section.css">
-	    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/service.css">
+			<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/news.css">
 	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!--[if lt IE 9]>
 				<script src="<?php echo base_url('assets') ?>/js/html5shiv.js"></script>
@@ -38,6 +38,8 @@
 
 </head>
 <body>
+
+
 
 <!-- Home -->
 	<section class="portfolio-header" id="header">
@@ -63,6 +65,13 @@
 						<li class="active"><a href="<?php echo base_url('news') ?>">news</a></li>
 						<li><a href="<?php echo base_url('presentation') ?>">presentation</a></li>
 						<li><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
+						<li class="dropdown">
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Order <span class="caret"></span></a>
+				              <ul class="dropdown-menu" role="menu">
+				                <li><a href="<?php echo base_url('limbah') ?>">Limbah B3</a></li>
+				                <li><a href="<?php echo base_url('batako') ?>">Batako</a></li>
+				              </ul>
+				         </li>
 						<li><a href="<?php echo base_url('contact') ?>">contact</a></li>
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
@@ -80,9 +89,7 @@
 			</ol>
 		</div> <!-- /.container -->
 	</section> <!-- /.section-background -->
-
-	<br>
-	<br>
+<!--
 	<div id="demo" class="carousel slide" data-ride="carousel" align="center">
 	  <ul class="carousel-indicators">
 	    <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -118,76 +125,55 @@
 	  <a class="carousel-control-next" href="#demo" data-slide="next">
 	    <span class="carousel-control-next-icon"></span>
 	  </a>
-	</div>
+	</div> -->
 
 <!-- Portfolio -->
-	<section class="portfolio" id="portfolio">
+	<section class="" id="">
 		<div class="container section-wrapper">
 			<h2 class="section-title black">
 				News
 			</h2> <!-- /.section-title -->
 			<div class="underline purple"></div>
 			<div class="row">
-				<div class="col-sm-3 col-xs-6">
-					<div class="portfolio-item">
-						<div class="portfolio-img">
-							<img src="<?php echo base_url('assets') ?>/images/port-1.png" alt="port-1" class="port-item">
-							<div class="portfolio-img-hover">
-								<a href="#"><img src="<?php echo base_url('assets') ?>/images/plus.png" alt="plus" class="plus"></a>
-							</div> <!-- /.portfolio-img-hover -->
-						</div> <!-- /.portfolio-img -->
-						<div class="portfolio-item-details">
-							<div class="portfolio-item-name">
-								Welcome to PT. WPLI <br>
-							</div> <!-- /.portfolio-item-name -->
-						</div> <!-- /.portfolio-item-details -->
-					</div> <!-- /.portfolio-item -->
-				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="portfolio-item">
-						<div class="portfolio-img">
-							<img src="<?php echo base_url('assets') ?>/images/port-2.png" alt="port-2" class="port-item">
-							<div class="portfolio-img-hover">
-								<a href="#"><img src="<?php echo base_url('assets') ?>/images/plus.png" alt="plus" class="plus"></a>
-							</div> <!-- /.portfolio-img-hover -->
-						</div> <!-- /.portfolio-img -->
-						<div class="portfolio-item-details">
-							<div class="portfolio-item-name">
-								Analysis Laboratory <br>
-							</div> <!-- /.portfolio-item-name -->
-						</div> <!-- /.portfolio-item-details -->
-					</div> <!-- /.portfolio-item -->
-				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="portfolio-item">
-						<div class="portfolio-img">
-							<img src="<?php echo base_url('assets') ?>/images/port-3.png" alt="port-3" class="port-item">
-							<div class="portfolio-img-hover">
-								<a href="#"><img src="<?php echo base_url('assets') ?>/images/plus.png" alt="plus" class="plus"></a>
-							</div> <!-- /.portfolio-img-hover -->
-						</div> <!-- /.portfolio-img -->
-						<div class="portfolio-item-details">
-							<div class="portfolio-item-name">
-								Transporting Waste <br>
-							</div> <!-- /.portfolio-item-name -->
-						</div> <!-- /.portfolio-item-details -->
-					</div> <!-- /.portfolio-item -->
-				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="portfolio-item">
-						<div class="portfolio-img">
-							<img src="<?php echo base_url('assets') ?>/images/port-4.png" alt="port-4" class="port-item">
-							<div class="portfolio-img-hover">
-								<a href="#"><img src="<?php echo base_url('assets') ?>/images/plus.png" alt="plus" class="plus"></a>
-							</div> <!-- /.portfolio-img-hover -->
-						</div> <!-- /.portfolio-img -->
-						<div class="portfolio-item-details">
-							<div class="portfolio-item-name">
-								Disposal Hazardous <br>
-							</div> <!-- /.portfolio-item-name -->
-						</div> <!-- /.portfolio-item-details -->
-					</div> <!-- /.portfolio-item -->
-				</div> <!-- /.col-md-4 -->
+				<div class="col-sm-4 col-xs-12">
+					<figure class="snip1208">
+  					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample66.jpg" alt="sample66"/>
+  						<div class="date"><span class="day">28</span><span class="month">Oct</span></div><i class="ion-film-marker"></i>
+  						<figcaption>
+    						<h3>The World Ended Yesterday</h3>
+    						<p>
+      						I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway.
+    						</p>
+    					<button>Read More</button>
+  					</figcaption><a href="#"></a>
+						</figure>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+							<figure class="snip1208 hover">
+  							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample9.jpg" alt="sample9" class="img-responsive"/>
+  							<div class="date"><span class="day">17</span><span class="month">Nov</span></div><i class="ion-headphone"> </i>
+  							<figcaption>
+    							<h3>An Abstract Post Heading</h3>
+    								<p>
+      							Sometimes the surest sign that intelligent life exists elsewhere in the universe is that none of it has tried to contact us.
+    								</p>
+    						<button>Read More</button>
+  						</figcaption><a href="#"></a>
+							</figure>
+						</div>
+						<div class="col-sm-4 col-xs-12">
+								<figure class="snip1208">
+  								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample6.jpg" alt="sample6"/>
+  									<div class="date"><span class="day">01</span><span class="month">Dec</span></div><i class="ion-checkmark"> </i>
+  										<figcaption>
+    										<h3>Down with this sort of thing</h3>
+    											<p>
+      											I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway.
+    											</p>
+    										<button>Read More</button>
+  									</figcaption><a href="#"></a>
+									</figure>
+								</div>
 			</div>
 		</div> <!-- /.container -->
 	</section> <!-- /.portfolio -->
@@ -222,6 +208,13 @@
     <script src="<?php echo base_url('assets') ?>/js/contact.js"></script>
 	<!-- // <script src="<?php echo base_url('assets') ?>/js/smoothscroll.js"></script> -->
 	<script src="<?php echo base_url('assets') ?>/js/script.js"></script>
+
+<script>
+	$(".hover").mouseleave(
+	function () {
+		$(this).removeClass("hover");
+	}
+); </script>
 
 
 </body>

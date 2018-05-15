@@ -34,7 +34,7 @@
 
 <!-- Home -->
 	<section class="portfolio-header" id="header">
-		
+
 		<nav class="navbar navbar-default _navbar-fixed-top">
 			<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -57,6 +57,13 @@
 						<li><a href="<?php echo base_url('news') ?>">news</a></li>
 						<li><a href="<?php echo base_url('presentation') ?>">presentation</a></li>
 						<li><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
+						<li class="dropdown">
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Order <span class="caret"></span></a>
+				              <ul class="dropdown-menu" role="menu">
+				                <li><a href="<?php echo base_url('limbah') ?>">Limbah B3</a></li>
+				                <li><a href="<?php echo base_url('batako') ?>">Batako</a></li>
+				              </ul>
+				         </li>
 						<li><a href="<?php echo base_url('contact') ?>">contact</a></li>
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
@@ -104,7 +111,7 @@
 						<li>Wash bottle , Botol winkler, Termometer, Tabung Reaksi, Labu Erlenmeyer, Labu takar</li>
 						<li>Pipet gondok, Pipet, volumetric, Pipet tetes</li>
 					</ul>
-					
+
 				</div> <!-- /.col-md-6 -->
 				<div class="col-md-2">
 				</div> <!-- /.col-md-3 -->
@@ -122,9 +129,9 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="copy">
-						Office : (0254) 786 0456 / 786 0298 Fax : (0254) 786 0432 
+						Office : (0254) 786 0456 / 786 0298 Fax : (0254) 786 0432
 						<br>
-						Jl. Raya Rangkasbitung Km. 6, RW 1, Desa Parakan, Kecamatan Jawilan, Serang. 
+						Jl. Raya Rangkasbitung Km. 6, RW 1, Desa Parakan, Kecamatan Jawilan, Serang.
 						<br>
 						Copyright &copy; 2018 PT.WPLI. All Rights Reserved.
 					</div>

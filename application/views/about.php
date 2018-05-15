@@ -56,7 +56,15 @@
 						<li><a href="<?php echo base_url('news') ?>">news</a></li>
 						<li><a href="<?php echo base_url('presentation') ?>">presentation</a></li>
 						<li><a href="<?php echo base_url('gallery') ?>">gallery</a></li>
+						<li class="dropdown">
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Order <span class="caret"></span></a>
+				              <ul class="dropdown-menu" role="menu">
+				                <li><a href="<?php echo base_url('limbah') ?>">Limbah B3</a></li>
+				                <li><a href="<?php echo base_url('batako') ?>">Batako</a></li>
+				              </ul>
+				         </li>
 						<li><a href="<?php echo base_url('contact') ?>">contact</a></li>
+
 					</ul> <!-- /.nav -->
 			    </div><!-- /.navbar-collapse -->
 		  	</div><!-- /.container -->
@@ -78,16 +86,16 @@
 <!-- About Us -->
 	<section class="about" id="about">
 		<div class="container section-wrapper">
-			<div class="center" align="center">
-			<video width="80%" height="80%" controls>
-				<source src="assets/images/wpli.mp4" type="video/mp4">
-			</video>
-		</div>
-			<br>
 			<h2 class="section-title black">
 				Introduction
 			</h2> <!-- /.section-title -->
 			<div class="underline purple"></div>
+			<div class="center" align="center">
+			<video width="80%" height="80%" controls>
+				<source src="assets/images/wpli.mp4" type="video/mp4">
+			</video>
+			<br>
+		</div>
 			<div class="row">
 				<div class="col-md-3 col-sm-3">
 					<img src="<?php echo base_url('assets') ?>/images/about-1.png" alt="about" class="about-img">
