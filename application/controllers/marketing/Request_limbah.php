@@ -2,10 +2,14 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Request_limbah extends CI_Controller {
-    
+
     public function __construct()
     {
-        parent::__construct();      
+      parent::__construct();
+      if(!isset($_SESSION['logged_in'])){
+              $url=base_url('administrator');
+              redirect($url);
+          };
         $this->load->model('m_data');
         $this->load->helper('url');
     }
@@ -14,7 +18,7 @@ class Request_limbah extends CI_Controller {
         $data['limbah'] = $this->m_data->tampil_data()->result();
         $this->load->view('marketing/request_limbah',$data);
     }
-    
+
     public function tambah()
     {
         $this->load->view('limbah', $data);
@@ -35,14 +39,14 @@ class Request_limbah extends CI_Controller {
             'keterangan' => $_POST['keterangan'],
         );
         $result = $this->m_data->input_data('limbah',$data);
-        
-        redirect('order');
+
+        redirect('limbah');
     }
 
     public function hapus($id){
         $where = array('id_order_limbah' => $id);
         $this->m_data->hapus_data($where,'limbah');
-        redirect('request_limbah');
+        redirect('marketing/request_limbah');
     }
 
     public function edit($id){
@@ -65,7 +69,7 @@ class Request_limbah extends CI_Controller {
         $fax = $this->input->post('fax');
         $keterangan = $this->input->post('keterangan');
         $status = $this->input->post('status');
- 
+
         $data = array(
             'nama_perusahaan' => $nama_perusahaan,
             'jenis_perusahaan' => $jenis_perusahaan,
@@ -80,13 +84,13 @@ class Request_limbah extends CI_Controller {
             'keterangan' => $keterangan,
             'status' => $status,
         );
- 
+
     $where = array(
         'id_order_limbah' => $id_order_limbah
     );
- 
+
     $this->m_data->update_data($where,$data,'limbah');
     redirect('marketing/request_limbah');
     }
-    
+
 }

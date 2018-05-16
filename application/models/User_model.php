@@ -17,6 +17,23 @@ public function __construct()
  return $query->result();
  }
 
+
+ // Listing limbah
+  public function limbah() {
+  $this->db->select('*');
+  $this->db->from('limbah');
+  $query = $this->db->get();
+  return $query->result();
+  }
+
+
+// Listing limbah
+ public function batako() {
+ $this->db->select('*');
+ $this->db->from('batako');
+ $query = $this->db->get();
+ return $query->result();
+ }
 }
 
 /* End of file User_model.php */

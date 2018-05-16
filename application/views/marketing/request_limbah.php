@@ -75,7 +75,7 @@
             </span>
           </a>
         </li>
-        
+
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -125,9 +125,9 @@
                 </tr>
                 </thead>
                 <tbody>
-                  <?php 
+                  <?php
                     $no = 1;
-                    foreach($limbah as $u){ 
+                    foreach($limbah as $u){
                         ?>
                         <tr>
                             <td><?php echo $u->nama_perusahaan ?></td>
@@ -147,10 +147,11 @@
                               <a href="<?php echo base_url('marketing/request_limbah/edit/'.$u->id_order_limbah)?>" class="btn btn-block btn-info">Edit</a>
                               <a href=# class="btn btn-block btn-danger" onclick="deleted('<?php echo $u->id_order_limbah; ?>')">Hapus</a>
                             </td>
-                        </tr> 
-                        <?php } ?> 
+                        </tr>
+                        <?php } ?>
                 </tbody>
               </table>
+                <p><a href="<?php echo base_url('excel/export_excellimbah') ?>">Export ke Excel</a></p>
             </div>
             <!-- /.box-body -->
           </div>

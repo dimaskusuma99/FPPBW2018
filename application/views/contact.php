@@ -120,7 +120,7 @@
 
 
 	        </div> <!-- /.row -->
-	        <form action="<?php echo base_url('admin/inbox/tambah_aksi') ?>" method="post" class="row form" >
+	        <form action="<?php echo base_url('contact/tambah_aksi') ?>" method="post" class="row form" >
                 <h3>Leave A Message</h3>
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Name</label>

@@ -2,10 +2,14 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Request_batako extends CI_Controller {
-    
+
     public function __construct()
     {
-        parent::__construct();      
+      parent::__construct();
+      if(!isset($_SESSION['logged_in'])){
+              $url=base_url('administrator');
+              redirect($url);
+          };
         $this->load->model('m_data_batako');
         $this->load->helper('url');
     }
@@ -14,7 +18,7 @@ class Request_batako extends CI_Controller {
         $data['batako'] = $this->m_data_batako->tampil_data()->result();
         $this->load->view('marketing/request_batako',$data);
     }
-    
+
     public function tambah()
     {
         $this->load->view('batako', $data);
@@ -34,14 +38,14 @@ class Request_batako extends CI_Controller {
             'fax' => $_POST['fax'],
         );
         $result = $this->m_data_batako->input_data('batako',$data);
-        
-        redirect('order');
+
+        redirect('batako');
     }
 
     public function hapus($id){
         $where = array('id_batako' => $id);
         $this->m_data_batako->hapus_data($where,'batako');
-        redirect('request_batako');
+        redirect('marketing/request_batako');
     }
 
     public function edit($id){
@@ -63,7 +67,7 @@ class Request_batako extends CI_Controller {
         $no_telp = $this->input->post('no_telp');
         $fax = $this->input->post('fax');
         $progres = $this->input->post('progres');
- 
+
         $data = array(
             'nama_customer' => $nama_customer,
             'alamat' => $alamat,
@@ -77,13 +81,14 @@ class Request_batako extends CI_Controller {
             'fax' => $fax,
             'progres' => $progres
         );
- 
+
     $where = array(
         'id_batako' => $id_batako
     );
- 
+
     $this->m_data_batako->update_data($where,$data,'batako');
     redirect('marketing/request_batako');
+
     }
-    
+
 }

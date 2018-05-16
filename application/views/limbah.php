@@ -88,7 +88,7 @@
 <!-- Form isian custommer limbah B3-->
 		<div class="container">
 			<div class="row">
-				<form action="<?php echo base_url('marketing/request_limbah/tambah_aksi')?>" method="post">
+				<form action="<?php echo base_url('limbah/tambah_aksi')?>" method="post">
 					<h1>Form Permintaan Customer Limbah B3</h1>
 						<div class="contentform">
 							<div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
@@ -114,21 +114,14 @@
 										<p>Alamat Lengkap Perusahaan : <span>*</span></p>
 										<span class="icon-case"><i class="fa fa-home"></i></span>
 										<input type="text" name="alamat_perusahaan" id="alamat_perusahaan" required="required"/>
-										<select type="text" name="provinsi" id="provinsi" required="required" placeholder="Provinsi">
-											<option value='0'>--Pilih Provinsi--</option>
-											<?php 
-											foreach ($provinsi as $prov) {
-												echo "<option value='$prov[id]'>$prov[name]</option>";}?>
-										</select>
-										<select type="text" name="kabupaten" id="kabupaten-kota" required="required" placeholder="Kabupaten"/>
-											<option value='0'>--Pilih Kabupaten--</option>
-										</select>
+										<input type="text" name="provinsi" id="provinsi" required="required" placeholder="Provinsi">
+										<input type="text" name="kabupaten" id="kabupaten-kota" required="required" placeholder="Kabupaten"/>
 									<div class="validation"></div>
 								</div>
 									<div class="form-group">
 									<p>Kode Pos :<span>*</span></p>
 									<span class="icon-case"><i class="fa fa-map-marker"></i></span>
-										<input type="text" name="kode_pos" id="kode_pos" required="required"/>
+										<input type="text" title="Masukan hanya angka" pattern="\d*" maxlength="5" name="kode_pos" id="kode_pos" required="required"/>
 									<div class="validation"></div>
 								</div>
 							</div>
@@ -152,14 +145,14 @@
 									<div class="form-group">
 									<p>Nomor Tlp/HP : <span>*</span></p>
 									<span class="icon-case"><i class="fa fa-phone"></i></span>
-									<input type="text" name="no_telp" id="no_telp" required="required"/>
+									<input type="text" name="no_telp" title="Masukan hanya angka" pattern="\d*" maxlength="15" id="no_telp" required="required"/>
 										<div class="validation"></div>
 									</div>
 
 									<div class="form-group">
 									<p>Fax : <span>*</span></p>
 									<span class="icon-case"><i class="fa fa-fax"></i></span>
-									<input type="text" name="fax" id="fax" required="required"/>
+									<input type="text" name="fax" title="Masukan hanya angka" pattern="\d*" maxlength="15" id="fax" required="required"/>
 										<div class="validation"></div>
 									</div>
 
@@ -171,7 +164,7 @@
 									</div>
 									</div>
 									</div>
-									
+
 									<button type="submit" class="bouton-contact">Send</button>
 									</form>
 </div>
@@ -205,34 +198,7 @@
     <script src="<?php echo base_url('assets') ?>/js/contact.js"></script>
 	<!-- // <script src="<?php echo base_url('assets') ?>/js/smoothscroll.js"></script> -->
 	<script src="<?php echo base_url('assets') ?>/js/script.js"></script>
-		<script type="text/javascript">
-		$(function(){
 
-		$.ajaxSetup({
-		type:"POST",
-		url: "<?php echo base_url('select/ambil_data') ?>",
-		cache: false,
-		});
-
-		$("#provinsi").change(function(){
-
-		var value=$(this).val();
-		if(value>0){
-		$.ajax({
-		data:{modul:'kabupaten',id:value},
-		success: function(respond){
-		$("#kabupaten-kota").html(respond);
-		}
-		})
-		}
-
-		});
-
-		$("#kabupaten-kota").change(function(){
-		});
-
-		});
-	</script>
 
 
 </body>

@@ -76,7 +76,7 @@
             </span>
           </a>
         </li>
-        
+
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -131,15 +131,8 @@
                     <p>Alamat Lengkap Perusahaan : <span>*</span></p>
                     <span class="icon-case"><i class="fa fa-home"></i></span>
                     <input type="text" name="alamat_perusahaan" id="alamat_perusahaan" required="required" value="<?php echo $u->alamat_perusahaan ?>"/>
-                    <select type="text" name="provinsi" id="provinsi" required="required" placeholder="Provinsi" value="<?php echo $u->provinsi ?>">
-                      <option value='0'>--Pilih Provinsi--</option>
-                      <?php 
-                      foreach ($provinsi as $prov) {
-                        echo "<option value='$prov[id]'>$prov[name]</option>";}?>
-                    </select>
-                    <select type="text" name="kabupaten" id="kabupaten-kota" required="required" placeholder="Kabupaten" value="<?php echo $u->kabupaten ?>"/>
-                      <option value='0'>--Pilih Kabupaten--</option>
-                    </select>
+                    <input type="text" name="provinsi" id="provinsi" required="required" placeholder="Provinsi" value="<?php echo $u->provinsi ?>">
+                    <input type="text" name="kabupaten" id="kabupaten-kota" required="required" placeholder="Kabupaten" value="<?php echo $u->kabupaten ?>"/>
                   <div class="validation"></div>
                 </div>
                   <div class="form-group">
@@ -199,7 +192,7 @@
 
                   </div>
                   </div>
-                  
+
                   <button type="submit" class="bouton-contact">Update</button>
                   </form>
                   <?php } ?>

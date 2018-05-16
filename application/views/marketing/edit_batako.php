@@ -116,15 +116,8 @@
                     <p>Alamat : <span>*</span></p>
                     <span class="icon-case"><i class="fa fa-home"></i></span>
                     <input type="text" name="alamat" id="alamat" required="required" value="<?php echo $u->alamat ?>"/>
-                    <select type="text" name="provinsi" id="provinsi" required="required" placeholder="Provinsi" value="<?php echo $u->provinsi ?>">
-                      <option value='0'>--Pilih Provinsi--</option>
-                      <?php 
-                      foreach ($provinsi as $prov) {
-                        echo "<option value='$prov[id]'>$prov[name]</option>";}?>
-                    </select>
-                    <select type="text" name="kabupaten" id="kabupaten-kota" required="required" placeholder="Kabupaten" value="<?php echo $u->kabupaten ?>"/>
-                      <option value='0'>--Pilih Kabupaten--</option>
-                    </select>
+                    <input type="text" name="provinsi" id="provinsi" required="required" placeholder="Provinsi" value="<?php echo $u->provinsi ?>">
+                    <input type="text" name="kabupaten" id="kabupaten-kota" required="required" placeholder="Kabupaten" value="<?php echo $u->kabupaten ?>"/>
                   <div class="validation"></div>
                 </div>
                   <div class="form-group">
@@ -184,7 +177,7 @@
 
                   </div>
                   </div>
-                  
+
                   <button type="submit" class="bouton-contact">Update</button>
                   </form>
                   <?php } ?>
@@ -221,34 +214,7 @@
 <script src="<?php echo base_url().'assets/dist/js/demo.js'?>"></script>
 <script type="text/javascript" src="<?php echo base_url().'assets/plugins/toast/jquery.toast.min.js'?>"></script>
 <!-- page script -->
-   <script type="text/javascript">
-    $(function(){
-
-    $.ajaxSetup({
-    type:"POST",
-    url: "<?php echo base_url('select/ambil_data') ?>",
-    cache: false,
-    });
-
-    $("#provinsi").change(function(){
-
-    var value=$(this).val();
-    if(value>0){
-    $.ajax({
-    data:{modul:'kabupaten',id:value},
-    success: function(respond){
-    $("#kabupaten-kota").html(respond);
-    }
-    })
-    }
-
-    });
-
-    $("#kabupaten-kota").change(function(){
-    });
-
-    });
-  </script>
+   
 <script>
   $(function () {
     $("#example1").DataTable();

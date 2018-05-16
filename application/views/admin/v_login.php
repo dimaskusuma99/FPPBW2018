@@ -25,7 +25,7 @@
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg"> <img src="<?php echo base_url().''?>"></p><hr/>
+    <p class="login-box-msg"></p><hr/>
 
     <form action="<?php echo base_url().'administrator/auth'?>" method="post">
       <div class="form-group has-feedback">
@@ -38,7 +38,7 @@
       </div>
       <div class="row">
         <div class="col-xs-8">
-        
+
         </div>
         <!-- /.col -->
         <div class="col-xs-4">

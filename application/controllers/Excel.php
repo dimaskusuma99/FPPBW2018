@@ -8,6 +8,7 @@ class Excel extends CI_Controller {
  parent::__construct();
  $this->load->model('user_model');
  $this->load->model('m_kontak');
+ $this->load->model('m_data');
  }
 
 public function index() {
@@ -28,6 +29,19 @@ public function export_excel(){
    echo $this->session->set_flashdata('msg','success-hapus');
    redirect('excel');
  }
+
+ public function export_excellimbah(){
+  $data = array( 'title' => 'Laporan Excel limbah',
+  'user' => $this->user_model->limbah());
+  $this->load->view('marketing/laporan_excellimbah', $data);
+  }
+
+  public function export_excelbatako(){
+   $data = array( 'title' => 'Laporan Excel batako',
+   'user' => $this->user_model->batako());
+   $this->load->view('marketing/laporan_excelbatako', $data);
+   }
+
 }
 
 /* End of file Excel.php */

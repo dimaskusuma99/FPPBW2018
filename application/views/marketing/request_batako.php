@@ -124,9 +124,9 @@
                 </tr>
                 </thead>
                 <tbody>
-                  <?php 
+                  <?php
                     $no = 1;
-                    foreach($batako as $u){ 
+                    foreach($batako as $u){
                         ?>
                         <tr>
                             <td><?php echo $u->nama_customer ?></td>
@@ -145,10 +145,11 @@
                               <a href="<?php echo base_url('marketing/request_batako/edit/'.$u->id_batako) ?>" class="btn btn-block btn-info">Edit</a>
                               <a href=# class="btn btn-block btn-danger" onclick="deleted('<?php echo $u->id_batako; ?>')">Hapus</a>
                             </td>
-                        </tr> 
-                        <?php } ?> 
+                        </tr>
+                        <?php } ?>
                 </tbody>
               </table>
+                <p><a href="<?php echo base_url('excel/export_excelbatako') ?>">Export ke Excel</a></p>
             </div>
             <!-- /.box-body -->
           </div>
@@ -273,4 +274,3 @@
 </script>
 </body>
 </html>
-
