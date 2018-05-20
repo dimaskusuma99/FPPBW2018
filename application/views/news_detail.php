@@ -13,7 +13,7 @@
 	    $views=$b['tulisan_views'];
 	    $rating=$b['tulisan_rating'];
     ?>
-    
+
 <!DOCTYPE html>
 <html class="noIE" lang="en-US">
 <!--<![endif]-->
@@ -47,6 +47,18 @@
 		    <![endif]-->
 </head>
 <body>
+	<!-- Start of LiveChat (www.livechatinc.com) code -->
+	<script type="text/javascript">
+	window.__lc = window.__lc || {};
+	window.__lc.license = 9759300;
+	(function() {
+		var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+		lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+	})();
+	</script>
+	<!-- End of LiveChat code -->
+
 <!-- Home -->
 	<section class="portfolio-header" id="header">
 		<nav class="navbar navbar-default _navbar-fixed-top">
@@ -186,7 +198,7 @@
 						<?php endforeach;?>
 
 					</div>
-					
+
 			</div>
 		</div> <!-- /.container -->
 	</section> <!-- /.portfolio -->
